@@ -1,0 +1,50 @@
+/*===== ABOUT STYLES =====*/
+
+section.about {
+    padding-top: $default-padding*4;
+    margin-top: -27px; /* aligns section with navbar */
+    background: $dark-base-color;
+    color: white;
+}
+
+    section.about .sub-container {
+        
+    }
+
+    section.about p {
+        font-size: 1.1rem;
+    }
+
+/*=== BEGIN ABOUT MEDIA QUERIES ===*/
+
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {  
+    
+}
+
+/* Small devices (tablets, 768px to 992px) */ 
+@media (min-width: 768px) and (max-width: 992px) {
+  
+    section.about h1 {
+        max-width: 60%;
+    }
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    section.about h1 {
+        max-width: 50%;
+    }
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+    section.about h1 {
+        max-width: 60%;
+    }
+    
+}

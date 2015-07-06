@@ -1,0 +1,128 @@
+/*===== PORTFOLIO STYLES =====*/
+
+section.portfolio {
+    width: 100%;
+    overflow: hidden;
+}
+
+    section.portfolio .first.sub-container {
+        
+    }
+
+    .work-belt {
+        @include display(flex);
+        width: 200%;        
+    }
+
+        .work-container {
+            width: 50%;
+            left: 0%;
+            @include clearfix();
+        }
+
+        section.portfolio img {
+            margin-bottom: 0px; /* eliminates vertical space b/t .work-items */
+        }
+
+            img.work-item {
+                cursor: pointer;
+            }
+
+        .work-focus {
+            height: 0; opacity: 0; /* hides the element so as not to impact height of the entire section */
+            visibility: hidden;
+            background: white;
+            width: 50%;
+            position: relative;
+            left: -100%;
+            @include transition(all $default-transition*3 ease);
+        }
+
+            .work-focus.slide {
+                height: 100%; opacity: 1; /* div is no longer hidden when this class is applied */
+                background: white;
+                visibility: visible;
+                left: -50%;
+                @include transition(all $default-transition*3 ease);
+            }
+
+            .work-focus.remove {
+                height: 0; opacity: 0;
+                visibility: hidden;
+                @include transition(all $default-transition*3 ease);
+            }
+
+            .work-focus .return {
+                cursor: pointer;
+            }
+
+/*=== BEGIN GLOBAL MEDIA QUERIES ===*/
+
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {  
+    
+    .work-container .work-cluster-main,
+    .work-container .work-cluster-main .work-cluster-tertiary {
+        @include display(block);
+    }
+    
+        .work-item {
+            max-height: 200px;
+        }
+    
+}
+
+@media (min-width: 768px) { /* layout for 768px and up */
+    
+     .work-container .work-cluster-main {
+            @include display(flex);
+        }
+            
+            .work-container .work-cluster-main .work-item.main { /* makes .work-item.main 2X larger than a typical .work-item */
+                @include flex(2);
+            }
+
+            .work-container .work-cluster-secondary { /* creates short column of images to the right of .work-item.main */
+                @include flex(1);
+                @include flex-direction(column);
+            }
+
+            .work-container .work-cluster-tertiary { /* creates row of images below .work-cluster-main */
+                @include display(flex);
+            }
+    
+    .work-item {
+        width: 100%;
+        height: 50% !important;
+    }
+    
+}
+
+/* Small devices (tablets, 768px to 992px) */ 
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    section.portfolio {
+        
+    }    
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+    section.portfolio {
+       
+    }
+    
+        section.portfolio .work-container,
+        section.portfolio .work-focus {
+            margin-top: $default-margin;
+        }
+       
+}   

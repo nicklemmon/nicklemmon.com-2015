@@ -1,0 +1,211 @@
+/*---
+---*/ 
+
+/* importing Bourbon */
+@import 'bourbon/bourbon';
+/* importing Bourbon Neat */
+@import 'neat/neat';
+/* importing hover.scss */
+@import 'hover/hover';
+/* importing misc. variables */
+@import 'vars/_vars';
+/* importing color variables */
+@import 'vars/_colors';
+/* importing sections index */
+@import 'sections/-sections-index';
+
+	/*== SASS MIX-INS ==*/
+
+    
+/*===== GLOBAL STYLES =====*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: $primary-font-stack;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+nav {
+    font-family: $secondary-font-stack;
+    color: $dark-text-color;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding-top: 5px;
+}
+
+    .navbar-brand {
+        color: white !important;
+        background: $dark-base-color;
+        transition: all $default-transition ease;
+    }
+
+        .navbar-brand:hover {
+            background: $dark-base-color !important; /* overrides default bootstrap behavior */
+        }
+
+    .navbar-default {
+        border-bottom: 0px;
+        border-radius: 0px; /* takes away silly rounded corners on the nav */
+    }
+
+        .navbar-nav li a {
+            padding-left: 30px;
+            margin-left: 20px;
+            background-size: 20px !important;
+            color: $dark-text-color !important;
+            transition: all $default-transition ease;
+        }
+        
+            .navbar-nav li a:hover {
+                color: lighten($dark-text-color, 30%) !important;
+                transition: all $default-transition ease;
+            }
+
+            .navbar-nav li a#bio {
+                background: url(/images/icons/bio.svg) no-repeat 0% 13px;
+            }
+
+            .navbar-nav li a#portfolio {
+                background: url(/images/icons/portfolio.svg) no-repeat 0% 13px;
+            }
+
+            .navbar-nav li a#contact {
+                background: url(/images/icons/contact.svg) no-repeat 0% 13px;
+            }
+
+section {
+    padding: $default-padding 0 $default-padding*2 0;
+}
+
+.sub-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 $default-padding/2;
+}
+
+a {
+    
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+p {
+    font-size: 1em;
+    line-height: 140%;
+    margin: 0 auto;
+    margin-bottom: $default-margin*2;
+}
+
+img {
+    margin-bottom: $default-margin;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: $secondary-font-stack;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all $default-transition ease;
+}
+
+    .btn:hover {
+        color: white;
+        transition: all $default-transition ease;
+    }
+
+    .btn.call-to-action {
+        background: $second-button-color;
+    }
+
+        .btn.call-to-action:hover {
+            background: darken($second-button-color, 10%);
+            
+        }
+
+    .btn.regular {
+        background: $reg-button-color;
+    }
+
+        .btn.regular:hover {
+            background: darken($reg-button-color, 10%);
+        }
+
+/*===== HEADER HIERARCHY =====*/
+
+h1 {
+    font-size: 2.5rem;
+    font-family: $secondary-font-stack;
+    color: $light-text-color;
+    line-height: 105%;
+    font-weight: 100;
+    margin: 0 auto;
+    margin-bottom: $default-margin;
+}
+
+h2 {
+    font-size: 1rem;  
+    font-family: $secondary-font-stack;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 900;
+    margin-bottom: $default-margin/1.25;
+}
+
+h3 {
+    font-size: 1rem;
+    font-family: $secondary-font-stack;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: $default-margin/2;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: $default-margin/4;
+}
+
+/*=== BEGIN GLOBAL MEDIA QUERIES ===*/
+
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {  
+    
+}
+
+/* Small devices (tablets, 768px to 992px) */ 
+@media (min-width: 768px) and (max-width: 992px) {
+  
+    p {
+        max-width: 60%;
+    }
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    p {
+        max-width: 50%;
+    }
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+    p {
+        max-width: 60%;
+    }
+    
+}

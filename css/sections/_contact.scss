@@ -1,0 +1,47 @@
+/*===== CONTACT STYLES =====*/
+
+section.contact {
+    
+}
+
+    section.contact form {
+        display: inline;
+    }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 5px;
+        }
+
+        input {
+            display: inline-block;
+        }
+
+        label {
+            display: block;
+            font-family: $secondary-font-stack;
+            color: $dark-text-color;
+            text-transform: uppercase;
+            font-size: .8em;
+            text-align: left;
+            margin-top: 2px;
+            margin-bottom: $default-margin;
+        }
+
+        textarea {
+            height: 20rem;
+        }
+
+        input[type="submit"] {
+            display: block !important;
+            float: left;
+            border: none !important;
+            font-size: 1rem;
+            font-family: $secondary-font-stack !important;
+            color: white;
+            background: $reg-button-color;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: $default-margin;
+        }

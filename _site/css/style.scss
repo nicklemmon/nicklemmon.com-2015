@@ -1,0 +1,68 @@
+/*---
+---*/ 
+
+/* importing Bourbon */
+@import 'bourbon/bourbon';
+/* importing Bourbon Neat */
+@import 'neat/neat';
+/* importing hover.scss */
+@import 'hover/hover';
+/* importing misc. variables */
+@import 'vars/_vars';
+/* importing color variables */
+@import 'vars/_colors';
+/* importing sections index */
+@import 'sections/-sections-index';
+
+	/*== SASS MIX-INS ==*/
+
+    
+/*===== GLOBAL STYLES =====*/
+
+html {
+    rem:    14px;
+}
+
+/*===== HEADER HIERARCHY =====*/
+
+h1 {
+    color:  red;
+}
+
+h2 {
+    
+}
+
+h3 {
+    
+}
+
+h4 {
+    
+}
+
+h5 {
+    
+}
+
+/*=== BEGIN GLOBAL MEDIA QUERIES ===*/
+
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {  
+    
+}
+
+/* Small devices (tablets, 768px to 992px) */ 
+@media (min-width: 768px) and (max-width: 992px) {
+  
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
