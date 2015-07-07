@@ -11,31 +11,33 @@ section.portfolio {
 
     .work-belt {
         @include display(flex);
-        width: 200%;        
+        width: 200%;
     }
 
         .work-container {
-            width: 50%;
-            left: 0%;
-            @include clearfix();
+            width: 50%; /* half of 200% is 100% */
+            height: 100%; opacity: 1;
+            @include display(flex);
+            @include flex-direction(row);
+            @include justify-content(space-between);
+            @include align-items(center);
+            @include flex-wrap(wrap);
+            @include align-items(flex-start);
         }
 
-        section.portfolio img {
-            margin-bottom: 0px; /* eliminates vertical space b/t .work-items */
-        }
-
-            img.work-item {
+            .work-container img.work-item {
+                margin-bottom: 0px; /* eliminates vertical space b/t .work-items */
                 cursor: pointer;
+                max-width: 33.33%;
             }
 
         .work-focus {
             height: 0; opacity: 0; /* hides the element so as not to impact height of the entire section */
             visibility: hidden;
             background: white;
-            width: 50%;
+            width: 50%; /* half of 200% is 100% */
             position: relative;
             left: -100%;
-            @include transition(all $default-transition*3 ease);
         }
 
             .work-focus.slide {
@@ -43,13 +45,13 @@ section.portfolio {
                 background: white;
                 visibility: visible;
                 left: -50%;
-                @include transition(all $default-transition*3 ease);
+                @include transition(left $default-transition*3 ease, opacity $default-transition*1.5 ease);
             }
 
-            .work-focus.remove {
+            .work-container.remove, .work-focus.remove {
                 height: 0; opacity: 0;
                 visibility: hidden;
-                @include transition(all $default-transition*3 ease);
+                @include transition(all $default-transition*1.5 ease);
             }
 
             .work-focus .return {
@@ -59,58 +61,30 @@ section.portfolio {
 /*=== BEGIN GLOBAL MEDIA QUERIES ===*/
 
 /* Smallest devices (phone, 768px and below) */
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
     
-    .work-container .work-cluster-main,
-    .work-container .work-cluster-main .work-cluster-tertiary {
-        @include display(block);
+    .work-container img.work-item {
+        max-width: 50%;
     }
-    
-        .work-item {
-            max-height: 200px;
-        }
     
 }
 
 @media (min-width: 768px) { /* layout for 768px and up */
-    
-     .work-container .work-cluster-main {
-            @include display(flex);
-        }
-            
-            .work-container .work-cluster-main .work-item.main { /* makes .work-item.main 2X larger than a typical .work-item */
-                @include flex(2);
-            }
-
-            .work-container .work-cluster-secondary { /* creates short column of images to the right of .work-item.main */
-                @include flex(1);
-                @include flex-direction(column);
-            }
-
-            .work-container .work-cluster-tertiary { /* creates row of images below .work-cluster-main */
-                @include display(flex);
-            }
-    
-    .work-item {
-        width: 100%;
-        height: 50% !important;
-    }
-    
+       
 }
 
 /* Small devices (tablets, 768px to 992px) */ 
 @media (min-width: 768px) and (max-width: 992px) {
-    
-    
+       
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-    
-    section.portfolio {
-        
-    }    
-    
+      
+    .work-focus {
+        margin: 0 auto;
+        max-width: 40%;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -124,5 +98,10 @@ section.portfolio {
         section.portfolio .work-focus {
             margin-top: $default-margin;
         }
+    
+    .work-focus {
+        margin: 0 auto;
+        max-width: 40%;
+    }
        
 }   

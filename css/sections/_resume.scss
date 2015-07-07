@@ -6,55 +6,68 @@ section.resume {
     @include clearfix();
 }
 
-    section.resume ul {
-        margin-top: $default-margin;
-        padding: 0; /* fixes weird issue with centering */
-        border-top: 1px solid white;
+    section.resume dl {
+        border-bottom: 1px solid white;
     }
 
-        section.resume ul li {
+        .definition {
+            @include display(flex);
+            @include justify-content(center);
+            @include align-items(center);
             font-family: $secondary-font-stack;
+            cursor: pointer;
+            border-top: 1px solid white;
+        }
+
+        .definition dt {
             font-weight: 300;
-            padding: $default-padding*2.25 0 $default-padding 0;
-            list-style: none;
-            border-bottom: 1px solid white;
+            padding: $default-padding*2 $default-padding/2 $default-padding $default-padding/2;
+            margin-right: -40px; /* hacky fix to broken center alignment */
             transition: all $default-transition ease;
         }
 
-            section.resume ul li#html {
-                background: url(/images/icons/html5.svg) no-repeat 50% $default-padding;
-                background-size: $default-padding*.85;
-            }
+        .definition dd {
+            font-size: 1rem;
+            text-align: left;
+            max-width: 50%;
+        }
 
-            section.resume ul li#css-and-sass {
-                background: url(/images/icons/sass.svg) no-repeat 50% $default-padding;
-                background-size: $default-padding*1.25;
-            }
+                .definition:hover {
+                    text-shadow: 3px 2px darken($dark-base-color, 100%) !important;
+                    background-color: darken($dark-base-color, 10%) !important;
+                    transition: all $default-transition ease;
+                }
 
-            section.resume ul li#javascript-and-jquery {
-                background: url(/images/icons/jquery.svg) no-repeat 50% $default-padding;
-                background-size: $default-padding*3;
-            }
+                    .definition dt#html {
+                        background: url(/images/icons/html5.svg) no-repeat 50% $default-padding;
+                        background-size: $default-padding*.85;
+                    }
 
-            section.resume ul li#jekyll {
-                background: url(/images/icons/jekyll.svg) no-repeat 50% $default-padding;
-                background-size: $default-padding*2.1;
-            }
+                    .definition dt#css-and-sass {
+                        background: url(/images/icons/sass.svg) no-repeat 50% $default-padding;
+                        background-size: $default-padding*1.25;
+                    }
 
-            section.resume ul li#illustration-and-vector-art {
-                background: url(/images/icons/illustrate.svg) no-repeat 50% $default-padding;
-                background-size: $default-padding;
-            }
+                    .definition dt#javascript-and-jquery {
+                        background: url(/images/icons/jquery.svg) no-repeat 50% $default-padding;
+                        background-size: $default-padding*3;
+                    }
 
-            section.resume ul li#logo-design {
-                background: url(/images/icons/logo-design.svg) no-repeat 50% $default-padding;
-                background-size: $default-padding;
-            }
+                    .definition dt#jekyll {
+                        background: url(/images/icons/jekyll.svg) no-repeat 50% $default-padding;
+                        background-size: $default-padding*2;
+                    }
 
-            section.resume ul li:hover {
-                background-color: darken($dark-base-color, 10%) !important;
-                transition: all $default-transition ease;
-            }
+                    .definition dt#illustration-and-vector-art {
+                        background: url(/images/icons/illustrate.svg) no-repeat 50% $default-padding;
+                        background-size: $default-padding;
+                    }
+
+                    .definition dt#logo-design {
+                        background: url(/images/icons/logo-design.svg) no-repeat 50% $default-padding;
+                        background-size: $default-padding;
+                    }
+
 
 /*===== RESUME MEDIA QUERIES =====*/
 

@@ -2,16 +2,14 @@ $( document ).ready(function() {
 
     $(".work-item").click(function() { /* moves .results from the right after the user selects their county of residence */
         $(".work-focus").removeClass("remove");
+        $(".work-container").addClass("remove");
         $(".work-focus").addClass("slide");
-        //$(".work-container").addClass("slide");
-        //$(".work-container").addClass("hide");
     });
     
     $(".return").click(function() {
         $(".work-focus").removeClass("slide");
         $(".work-focus").addClass("remove");
-        //$(".work-container").removeClass("slide");
-        //$(".work-container").removeClass("hide");
+        $(".work-container").removeClass("remove");
     });
     
     /* $(window).resize(function() {
