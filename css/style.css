@@ -4882,8 +4882,10 @@ section.portfolio, footer.portfolio {
 }
 
 .work-container {
-  width: 50%;
+  max-width: 50%;
   /* half of 200% is 100% */
+  position: relative;
+  left: 0%;
   height: 100%;
   opacity: 1;
   display: -webkit-box;
@@ -4900,15 +4902,6 @@ section.portfolio, footer.portfolio {
   -moz-flex-direction: row;
   flex-direction: row;
   -ms-flex-direction: row;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
@@ -4940,7 +4933,6 @@ section.portfolio, footer.portfolio {
   margin-bottom: 0px;
   /* eliminates vertical space b/t .work-items */
   cursor: pointer;
-  max-width: 33.33%;
 }
 
 .work-focus {
@@ -4980,12 +4972,18 @@ section.portfolio, footer.portfolio {
   cursor: pointer;
 }
 
+.work-focus p {
+  font-size: 1rem;
+  color: #7f7f7f;
+  line-height: 140%;
+}
+
 /*=== BEGIN GLOBAL MEDIA QUERIES ===*/
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
-  .work-container img.work-item {
-    max-width: 50%;
-  }
+  /*.work-container img.work-item {
+      max-width: 50%;
+  }*/
 }
 @media (min-width: 768px) {
   /* layout for 768px and up */
@@ -4995,7 +4993,7 @@ section.portfolio, footer.portfolio {
 @media (min-width: 992px) and (max-width: 1200px) {
   .work-focus {
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
@@ -5008,7 +5006,7 @@ section.portfolio, footer.portfolio {
 
   .work-focus {
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 60%;
   }
 }
 /*===== RESUME STYLES =====*/
@@ -5272,7 +5270,7 @@ p {
   font-size: 1em;
   line-height: 140%;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 img {
@@ -5332,15 +5330,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "Lato", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: 300;
+  text-transform: lowercase;
   margin-bottom: 15px;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 7.5px;

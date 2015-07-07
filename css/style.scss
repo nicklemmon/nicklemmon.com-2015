@@ -100,7 +100,7 @@ p {
     font-size: 1em;
     line-height: 140%;
     margin: 0 auto;
-    margin-bottom: $default-margin*2;
+    margin-bottom: $default-margin;
 }
 
 img {
@@ -162,15 +162,15 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: $secondary-font-stack;
-    font-weight: 900;
-    text-transform: uppercase;
+    font-weight: 300;
+    text-transform: lowercase;
     margin-bottom: $default-margin/2;
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: $default-margin/4;
