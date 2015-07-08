@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 
-    $(".work-item").click(function() { /* moves .results from the right after the user selects their county of residence */
+    /*===== functions for section.portfolio to bring in detailed view of each .work-item =====*/
+    $(".work-item").click(function() {
         $(".work-focus").removeClass("remove");
         $(".work-container").addClass("remove");
         $(".work-focus").addClass("slide");
@@ -12,29 +13,29 @@ $( document ).ready(function() {
         $(".work-container").removeClass("remove");
     });
     
-    /* $(window).resize(function() {
+    /*===== functions for section.resume to 'open' each resume skill and display the <dd> =====*/
+    $(".definition").click(function(){
         
-        if( $(this).width() < 768 ) { /* if the browser/device width is less than 768px, then change the animation of .results when the user selects their county of residence 
-
-            $(".submit").click(function() {
-                $(".results").css('margin-top', '180px');
-                $(".results").show();
-            });
-
-        };
-
-        /*else {
-
-            $(".submit").click(function() {
-                $(".results").css('left', '60%');
-                $(".results").show();   
-            });
-
-        };*/
-
-    //});
+        var dd = $(this).children("dd");
+        
+        if (  !(dd.hasClass("show"))  ) { /* if the <dd> element does NOT have a class of .show... */
+            dd.addClass("show"); /* ...then add a class of .show... */
+            $(this).children("dt").removeClass("right-spin"); /* ...and remove a class of .right-spin if it's there... */
+            $(this).children("dt").addClass("left-spin"); /* ...and add a class of .left-spin to the <dt> element */
+        }
+        
+        else { /* if the <dd> element DOES have a class of .show... */
+            dd.removeClass("show"); /* ...then remove a class of .show... */
+            $(this).children("dt").removeClass("left-spin"); /* ...and also remove the class of .left-spin from the <dt> element... */
+            $(this).children("dt").addClass("right-spin"); /* ...and add a class of .right-spin */
+        }
+        
+    });
     
-    $('a[href*=#]:not([href=#])').click(function() { /* smooth scrolling function from https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+    
+    
+    /*===== smooth scrolling function from https://css-tricks.com/snippets/jquery/smooth-scrolling/ =====*/
+    $('a[href*=#]:not([href=#])').click(function() { 
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

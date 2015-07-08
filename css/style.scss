@@ -11,6 +11,8 @@
 @import 'vars/_vars';
 /* importing color variables */
 @import 'vars/_colors';
+/* importing css animations */
+@import 'vars/_animations';
 /* importing sections index */
 @import 'sections/-sections-index';
 
@@ -98,9 +100,11 @@ a {
 
 p {
     font-size: 1em;
-    line-height: 140%;
-    margin: 0 auto;
-    margin-bottom: $default-margin;
+    line-height: 160%;
+    margin: 0 auto; /* centering */
+    color: $light-text-color;
+    margin-top: $default-margin;
+    margin-bottom: $default-margin*2;
 }
 
 img {

@@ -10,6 +10,10 @@ section.resume {
         border-bottom: 1px solid white;
     }
 
+    section.resume p {
+        color: white;
+    }
+
         .definition {
             @include display(flex);
             @include justify-content(center);
@@ -17,20 +21,35 @@ section.resume {
             font-family: $secondary-font-stack;
             cursor: pointer;
             border-top: 1px solid white;
+            max-height: 140px;
+            overflow: hidden; /* fixes issue where re-sizing text changes the size of the container when clicking on .definition divs */
         }
 
         .definition dt {
             font-weight: 300;
             padding: $default-padding*2 $default-padding/2 $default-padding $default-padding/2;
-            margin-right: -40px; /* hacky fix to broken center alignment */
-            transition: all $default-transition ease;
+            width: 200px;
+            margin-right: -0px; /* hacky fix to broken center alignment */
         }
 
         .definition dd {
+            visibility: hidden;
+            color: $light-text-color;
             font-size: 1rem;
-            text-align: left;
-            max-width: 50%;
+            opacity: 0;
+            height: 0;
+            width: 0%;
+            @include transition(height $default-transition ease, width $default-transition ease, visibility 0s ease, opacity 0s ease);
         }
+
+            .definition dd.show {
+                text-align: left;
+                visibility: visible;
+                height: auto;
+                width: 50%;
+                opacity: 1;
+                @include transition(height $default-transition ease, width $default-transition ease, visibility $default-transition*8 ease, opacity $default-transition*8 ease);
+            }
 
                 .definition:hover {
                     text-shadow: 3px 2px darken($dark-base-color, 100%) !important;
