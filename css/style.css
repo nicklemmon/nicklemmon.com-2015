@@ -4937,10 +4937,61 @@
 }
 /* importing sections index */
 /*===== NAVBAR STYLES =====*/
+nav {
+  font-family: "Lato", sans-serif;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-top: 5px;
+}
+
 .navbar-brand {
+  color: white !important;
+  background: #333333;
+  transition: all 0.3s ease;
   background-image: url(logo.svg);
   background-repeat: no-repeat;
   display: block;
+}
+
+.navbar-brand:hover {
+  background: #333333 !important;
+  /* overrides default bootstrap behavior */
+}
+
+.navbar-default {
+  border-bottom: 0px;
+  border-radius: 0px;
+  /* takes away silly rounded corners on the nav */
+}
+
+.navbar-nav li a {
+  padding-left: 30px;
+  margin-left: 20px;
+  background-size: 20px !important;
+  color: #1a1a1a !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+  color: #676767 !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav li a.bio {
+  background: url(/images/icons/bio.svg) no-repeat 0% 13px;
+}
+
+.navbar-nav li a.portfolio {
+  background: url(/images/icons/portfolio.svg) no-repeat 0% 13px;
+}
+
+.navbar-nav li a.resume {
+  background: url(/images/icons/resume.svg) no-repeat 0% 13px;
+}
+
+.navbar-nav li a.contact {
+  background: url(/images/icons/contact.svg) no-repeat 0% 13px;
 }
 
 /*===== ABOUT STYLES =====*/
@@ -4997,7 +5048,7 @@ section.portfolio:before, footer.portfolio:before {
   display: block;
   margin: 0 auto;
   background: #333333;
-  max-width: 240px;
+  max-width: 80px;
   height: 10px;
 }
 
@@ -5365,60 +5416,6 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
   text-align: center;
-}
-
-nav {
-  font-family: "Lato", sans-serif;
-  color: #1a1a1a;
-  text-transform: uppercase;
-  font-size: 1rem;
-  padding-top: 5px;
-}
-
-.navbar-brand {
-  color: white !important;
-  background: #333333;
-  transition: all 0.3s ease;
-}
-
-.navbar-brand:hover {
-  background: #333333 !important;
-  /* overrides default bootstrap behavior */
-}
-
-.navbar-default {
-  border-bottom: 0px;
-  border-radius: 0px;
-  /* takes away silly rounded corners on the nav */
-}
-
-.navbar-nav li a {
-  padding-left: 30px;
-  margin-left: 20px;
-  background-size: 20px !important;
-  color: #1a1a1a !important;
-  transition: all 0.3s ease;
-}
-
-.navbar-nav li a:hover {
-  color: #676767 !important;
-  transition: all 0.3s ease;
-}
-
-.navbar-nav li a#bio {
-  background: url(/images/icons/bio.svg) no-repeat 0% 13px;
-}
-
-.navbar-nav li a#portfolio {
-  background: url(/images/icons/portfolio.svg) no-repeat 0% 13px;
-}
-
-.navbar-nav li a#resume {
-  background: url(/images/icons/resume.svg) no-repeat 0% 13px;
-}
-
-.navbar-nav li a#contact {
-  background: url(/images/icons/contact.svg) no-repeat 0% 13px;
 }
 
 section, footer {
