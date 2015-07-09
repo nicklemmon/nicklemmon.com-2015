@@ -27,6 +27,7 @@ section.resume {
 
         .definition dt {
             font-weight: 300;
+            line-height: 130%;
             padding: $default-padding*2 $default-padding/2 $default-padding $default-padding/2;
             width: 200px;
             margin-right: -0px; /* hacky fix to broken center alignment */
@@ -59,32 +60,32 @@ section.resume {
 
                     .definition dt#html {
                         background: url(/images/icons/html5.svg) no-repeat 50% $default-padding;
-                        background-size: $default-padding*.85;
+                        background-size: 50px;
                     }
 
                     .definition dt#css-and-sass {
                         background: url(/images/icons/sass.svg) no-repeat 50% $default-padding;
-                        background-size: $default-padding*1.25;
+                        background-size: 60px;
                     }
 
                     .definition dt#javascript-and-jquery {
-                        background: url(/images/icons/jquery.svg) no-repeat 50% $default-padding;
-                        background-size: $default-padding*3;
+                        background: url(/images/icons/jquery.svg) no-repeat 50% $default-padding*1.3;
+                        background-size: 130px;
                     }
 
                     .definition dt#jekyll {
-                        background: url(/images/icons/jekyll.svg) no-repeat 50% $default-padding;
-                        background-size: $default-padding*2;
+                        background: url(/images/icons/jekyll.svg) no-repeat 50% $default-padding*1.2;
+                        background-size: 100px;
                     }
 
                     .definition dt#illustration-and-vector-art {
-                        background: url(/images/icons/illustrate.svg) no-repeat 50% $default-padding;
-                        background-size: $default-padding;
+                        background: url(/images/icons/illustrate.svg) no-repeat 50% $default-padding*1.2;
+                        background-size: 40px;
                     }
 
                     .definition dt#logo-design {
-                        background: url(/images/icons/logo-design.svg) no-repeat 50% $default-padding;
-                        background-size: $default-padding;
+                        background: url(/images/icons/logo-design.svg) no-repeat 50% $default-padding*1.1;
+                        background-size: 50px;
                     }
 
 

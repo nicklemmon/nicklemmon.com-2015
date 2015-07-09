@@ -53,8 +53,9 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a id="bio" href="#bio">About me</a></li>
-                  <li><a id="portfolio" href="#portfolio">My work</a></li>
+                  <li><a id="bio" href="#bio">Bio</a></li>
+                  <li><a id="portfolio" href="#portfolio">Work</a></li>
+                  <li><a id="resume" href="#resume">Resume</a></li>
                   <li><a id="contact" href="#contact">Contact</a></li>
                 </ul>
               </div> <!-- end .navbar-collapse -->
@@ -102,15 +103,15 @@
                 <div class="sub-container">
                 <div class="work-belt">
                     <div class="work-container">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
-                        <img src="/images/img-placeholder.png" class="work-item main" width="300px" height="200px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
+                        <img src="/images/img-placeholder.png" class="work-item" width="300px" height="300px">
                     </div> <!-- end .work-container -->
 
                     <div class="work-focus">
@@ -120,6 +121,9 @@
                             <p>Curabitur ornare convallis cursus. Donec sit amet diam eleifend, posuere ipsum vitae, iaculis nisi. Phasellus varius rhoncus felis, sed ultrices nisi feugiat at. Vivamus luctus auctor dolor non euismod. Mauris id tincidunt neque. Mauris pretium quis risus a vehicula. Phasellus a maximus est. Mauris et dapibus lorem.</p>
                             <img src="/images/img-placeholder.png" width="500px" height="500px">
                             <img src="/images/img-placeholder.png" width="500px" height="500px">
+                            
+                            <br> <!-- adds break that fixes .return not clearing images --> 
+                            <a class="return">Return</a>
                         </div>
                     </div> <!-- end .work-focus -->
                 </div> <!-- end .work-belt -->
@@ -170,7 +174,7 @@
                     
                     <h2>Contact</h2>
                     
-                    <p>If you're hiring or have questions about my work, I'm happy to chat. Send me a message and we'll go from there.</p>
+                    <p>If you have work, or have questions about my portfolio, I'm happy to chat. Send me a message and we'll go from there.</p>
                     
                     <form>
                         <input name="first-name" placeholder="first name" required>
@@ -179,7 +183,7 @@
                         <label for="last-name">Last name</label>
                         <input type="email" placeholder="email address" required>
                         <label for="email">E-mail address</label>
-                        <textarea name="message" placeholder="Your message"></textarea>
+                        <textarea name="message" placeholder="your message"></textarea>
                         <label for="message">Enter your message</label>
                         <input class="btn regular" type="submit" value="Go">
                     </form>

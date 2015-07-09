@@ -75,6 +75,10 @@ nav {
                 background: url(/images/icons/portfolio.svg) no-repeat 0% 13px;
             }
 
+            .navbar-nav li a#resume {
+                background: url(/images/icons/resume.svg) no-repeat 0% 13px;
+            }
+
             .navbar-nav li a#contact {
                 background: url(/images/icons/contact.svg) no-repeat 0% 13px;
             }
@@ -103,8 +107,8 @@ p {
     line-height: 160%;
     margin: 0 auto; /* centering */
     color: $light-text-color;
-    margin-top: $default-margin;
-    margin-bottom: $default-margin*2;
+    margin-top: $default-margin/2;
+    margin-bottom: $default-margin;
 }
 
 img {
@@ -166,7 +170,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-family: $secondary-font-stack;
     font-weight: 300;
     text-transform: lowercase;
