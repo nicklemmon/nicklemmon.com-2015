@@ -5052,7 +5052,8 @@ section.about p, footer.about p {
 section.bio img, footer.bio img {
   border-radius: 50%;
   border: 15px solid #7a7a7a;
-  max-width: 220px;
+  max-width: 200px;
+  margin-bottom: 20px;
 }
 
 /*===== PORTFOLIO STYLES =====*/
