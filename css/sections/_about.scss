@@ -15,8 +15,9 @@ section.about {
     section.about h1 {
         display: inline-block;
         padding: $default-padding;
-        background-color: $second-button-color;
+        background-color: $light-base-color;
     }
+
 
     section.about p {
         color: white;

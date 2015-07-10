@@ -30,7 +30,7 @@ section.resume {
             line-height: 130%;
             padding: $default-padding*2 $default-padding/2 $default-padding $default-padding/2;
             width: 200px;
-            margin-right: -0px; /* hacky fix to broken center alignment */
+            margin-right: -40px; /* hacky fix to broken center alignment */
         }
 
         .definition dd {

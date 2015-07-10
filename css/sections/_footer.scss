@@ -3,6 +3,7 @@
 
 footer {
     @extend section;
+    padding: $default-padding/2 0 $default-padding/2 0 !important;
     background: $dark-base-color;
     color: white;
     font-family: $secondary-font-stack;
