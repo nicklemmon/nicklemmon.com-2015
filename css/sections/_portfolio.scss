@@ -1,7 +1,6 @@
 /*===== PORTFOLIO STYLES =====*/
 
 section.portfolio {
-    width: 100%;
     padding-top: 0;
     overflow: hidden;
 }
@@ -11,8 +10,8 @@ section.portfolio {
         display: block;
         margin: 0 auto;
         background: $dark-base-color;
-        max-width: $default-margin*2;
-        height: 10px;
+        max-width: $default-margin*6;
+        height: 5px;
     }
 
     section.portfolio .first.sub-container {
@@ -25,17 +24,22 @@ section.portfolio {
     }
 
         .work-container {
-            max-width: 960px; /* half of 200% is 100% */
             position: relative;
-            left: 0%;
+            //left: 0%;
             margin: 0 auto;
+            max-width: 50%;
             height: 100%; opacity: 1;
             @include display(flex);
             @include flex-direction(row);
             @include align-items(center);
             @include flex-wrap(wrap);
-            @include align-items(flex-start);
         }
+
+            .work-container .row {
+                @include display(flex);
+                @include flex-direction(row);
+                @include align-items(center);
+            }
 
             .work-container img.work-item {
                 margin-bottom: 0px; /* eliminates vertical space b/t .work-items */
@@ -46,9 +50,14 @@ section.portfolio {
             height: 0; opacity: 0; /* hides the element so as not to impact height of the entire section */
             visibility: hidden;
             background: white;
-            width: 50%; /* half of 200% is 100% */
+            max-width: 100%; /* half of 200% is 100% */
+            padding-top: $default-padding;
+            padding-bottom: $default-padding;
             position: relative;
             left: -100%;
+            @include display(flex);
+            @include flex-direction(column);
+            @include align-items(center);
         }
 
             .work-focus.slide {
@@ -75,9 +84,9 @@ section.portfolio {
             }
 
             .work-focus p {
-                font-size: 1.1rem;
-                color: $light-text-color;
-                line-height: 160%;
+                font-size: 1rem;
+                color: lighten($light-text-color, 20%);
+                line-height: 145%;
             }
 
 /*=== BEGIN GLOBAL MEDIA QUERIES ===*/
@@ -85,6 +94,35 @@ section.portfolio {
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
     
+    section.portfolio {
+        padding: 0 !important;
+    }
+    
+    .work-container {
+        margin-bottom: $default-margin;
+    }
+    
+        .work-container .row {
+            @include display(flex);
+            @include flex-direction(row);
+            @include align-items(center);
+            @include flex-wrap(wrap);
+            max-width: 100% !important;
+        }
+    
+    section.portfolio .sub-container,
+    .work-focus {
+        max-width: 100% !important;
+    }
+    
+    .work-focus .sub-container {
+        padding: 0;
+        max-width: 100% !important;
+    }
+    
+    .work-focus .return {
+        margin-right: -40px !important; /* centers right arrow on small screens */
+    }
     
 }
 
@@ -102,21 +140,15 @@ section.portfolio {
       
     .work-focus {
         margin: 0 auto;
-        max-width: 50%;
+        max-width: 60%;
     }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    
-    section.portfolio {
        
-    }
+
     
-        section.portfolio .work-container,
-        section.portfolio .work-focus {
-            margin-top: $default-margin;
-        }
     
     .work-focus {
         margin: 0 auto;

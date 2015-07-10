@@ -7,6 +7,9 @@ $( document ).ready(function() {
         $(".work-focus").addClass("slide"); /* ...and finally ad the class .slide to .work-focus */
     });
     $(".return").click(function() { /* when the user clicks on .return... */
+        
+        var target = $(this).attr("id");
+        
         $(".work-focus").removeClass("slide"); /* ...remove the class .slide from .work-focus... */
         $(".work-focus").addClass("remove"); /* ...add the class .remove to .work-focus... */
         $(".work-container").delay(100).queue(function() {

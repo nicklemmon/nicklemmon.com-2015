@@ -1,14 +1,21 @@
 /*===== ABOUT STYLES =====*/
 
 section.about {
-    padding-top: $default-padding*4;
+    padding-top: $default-padding*3;
     margin-top: -27px; /* aligns section with navbar */
-    background: $dark-base-color;
+    background: url(/images/hero.JPG) $dark-base-color;
+    background-size: cover;
     color: white;
 }
 
     section.about .sub-container {
         
+    }
+
+    section.about h1 {
+        display: inline-block;
+        padding: $default-padding;
+        background-color: $second-button-color;
     }
 
     section.about p {
@@ -22,14 +29,22 @@ section.about {
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {  
     
+    section.about {
+        padding-top: $default-padding*2;
+    }
 }
 
 /* Small devices (tablets, 768px to 992px) */ 
 @media (min-width: 768px) and (max-width: 992px) {
   
-    section.about h1 {
-        max-width: 60%;
+    
+    section.about {
+        padding-top: $default-padding*3;
     }
+
+        section.about h1 {
+            max-width: 70%;
+        }
     
 }
 

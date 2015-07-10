@@ -10,14 +10,16 @@ nav {
 
     .navbar-brand {
         color: white !important;
-        background: $dark-base-color;
+        background: $dark-base-color !important;
         transition: all $default-transition ease;
         background-image: url(logo.svg);
 	    background-repeat: no-repeat;
 	    display: block;
     }
 
-        .navbar-brand:hover {
+        .navbar-brand:hover,
+        .navbar-brand:visited,
+        .navbar-brand:active {
             background: $dark-base-color !important; /* overrides default bootstrap behavior */
         }
 
