@@ -6,7 +6,7 @@ section.bio {
 
     section.bio img {
         border-radius: 50%;
-        border: 3px solid $second-button-color;
+        border: 8px solid lighten($light-text-color,40%);
         max-width: 200px;
         margin-bottom: 20px;
     }

@@ -5,6 +5,7 @@ section.about {
     margin-top: -27px; /* aligns section with navbar */
     background: url(/images/hero.JPG) $dark-base-color;
     background-size: cover;
+    background-position: 50% 90%;
     color: white;
 }
 
@@ -12,23 +13,83 @@ section.about {
         
     }
 
-    section.about h1 {
-        display: inline-block;
-        padding: $default-padding;
-        background-color: $light-base-color;
-    }
+	.about-info {
+		display: inline-block;
+        //background-color: rgba(28,222,176,.7);
+		margin-bottom: $default-margin*2;
+	}
 
+		section.about h1 {
+			margin-bottom: 0px !important;
+		}
+		
+		ul.tabs{
+			@include display(flex);
+			@include flex-direction(row);
+			@include justify-content(space-between);
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			width: 100%;
+		}
+
+		ul.tabs li{
+			text-transform: lowercase;
+			background: rgba(28,222,176,.7);
+			display: inline-block;
+			padding: $default-padding;
+			cursor: pointer;
+			width: 33.33%;
+			@include transition(all $default-transition ease);
+		}
+
+			ul.tabs li[data-tab="tab-1"] {
+				
+			}
+
+			ul.tabs li[data-tab="tab-2"] {
+				
+			}
+
+			ul.tabs li[data-tab="tab-3"] {
+				
+			}
+
+		ul.tabs li.current{
+			background-color: rgba(28,222,176,.8);
+			@include transition(all $default-transition ease);
+		}
+
+		.tab-content{
+			display: none;
+			min-height: 300px;
+			padding: $default-padding;
+		}
+
+		.tab-content.current{
+			display: inherit;
+			@include display(flex);
+			@include align-items(center);
+			@include justify-content(center);
+			background-color: rgba(28,222,176,.8);
+		}
 
     section.about p {
         color: white;
         font-weight: 300;
         font-size: 1.3rem;
+		max-width: 80%;
     }
 
 /*=== BEGIN ABOUT MEDIA QUERIES ===*/
 
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {  
+	
+	section.about h1 {
+		max-width: 100%;
+		font-weight: 300 !important;
+	}
     
     section.about {
         padding-top: $default-padding*2;

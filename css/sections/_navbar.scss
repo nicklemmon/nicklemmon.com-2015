@@ -6,15 +6,17 @@ nav {
     text-transform: uppercase;
     font-size: 1rem;
     padding-top: 5px;
+	overflow-y: hidden;
 }
 
     .navbar-brand {
         color: white !important;
-        background: $dark-base-color !important;
+        background: $dark-base-color;
         transition: all $default-transition ease;
         background-image: url(logo.svg);
 	    background-repeat: no-repeat;
 	    display: block;
+		padding-bottom: 40px; /* gives a little extra padding to deal with hover effect on the right side of the nav */
     }
 
         .navbar-brand:hover,
@@ -33,12 +35,14 @@ nav {
             margin-left: 20px;
             background-size: 20px !important;
             color: $dark-text-color !important;
+			border-top: 0px solid $light-base-color;
             transition: all $default-transition ease;
         }
         
             .navbar-nav li a:hover {
                 color: lighten($dark-text-color, 30%) !important;
-                transition: all $default-transition ease;
+				border-top: 3px solid $light-base-color;
+				transition: all $default-transition ease;
             }
 
             .navbar-nav li a.bio {

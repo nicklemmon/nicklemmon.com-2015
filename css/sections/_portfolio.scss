@@ -109,6 +109,10 @@ section.portfolio {
             @include flex-wrap(wrap);
             max-width: 100% !important;
         }
+	
+		.work-container .work-item {
+			max-height: 200px;
+		}
     
     section.portfolio .sub-container,
     .work-focus {

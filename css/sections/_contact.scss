@@ -50,3 +50,15 @@ section.contact {
             cursor: pointer;
             margin-bottom: $default-margin;
         }
+
+
+/*=== BEGIN CONTACT MEDIA QUERIES ===*/
+
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {  
+    
+	section.contact .sub-container {
+		padding: 0 $default-padding/2;
+	}
+	
+}

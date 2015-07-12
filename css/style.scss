@@ -48,8 +48,11 @@ a {
     
 }
 
-    a:hover {
+    a:hover,
+	a:visited,
+	a:active {
         text-decoration: none;
+		color: white;
     }
 
 p {
@@ -82,11 +85,16 @@ img {
     }
 
     .btn.call-to-action {
-        background: $second-button-color;
+        background: rgba(0,0,0,0);
+		width: 200px;
+		padding: 15px;
+		border: 3px solid #fff;
+		outline: none;
+		text-transform: uppercase;
     }
 
         .btn.call-to-action:hover {
-            background: darken($second-button-color, 10%);
+            background: rgba(0,0,0,.2);
             
         }
 
@@ -101,7 +109,7 @@ img {
 /*===== HEADER HIERARCHY =====*/
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.75rem;
     font-family: $secondary-font-stack;
     color: white;
     line-height: 105%;
@@ -143,6 +151,14 @@ h4 {
     html {
         font-size: 80%;
     }
+	
+	.sub-container {
+		padding: 0;
+	}
+	
+	p {
+		padding: 0 $default-padding/2;
+	}
     
 }
 

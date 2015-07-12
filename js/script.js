@@ -1,4 +1,15 @@
 $( document ).ready(function() {
+	
+	/*===== function for section.about tabs =====*/	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
 
     /*===== functions for section.portfolio to bring in detailed view of each .work-item =====*/
     $(".work-item").click(function() { /* when the user clicks on a .work-item... */
