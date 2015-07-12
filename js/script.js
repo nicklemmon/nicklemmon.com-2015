@@ -29,7 +29,7 @@ $( document ).ready(function() {
                                                });  /* ...and remove the class .remove from .work-container */
     });
     
-    /*===== functions for section.resume to 'open' each resume skill and display the <dd> =====*/
+    /*===== functions for section.skills to 'open' each skills skill and display the <dd> =====*/
     $(".definition").click(function(){
         var dd = $(this).children("dd");
         if (  !(dd.hasClass("show"))  ) { /* if the <dd> element does NOT have a class of .show... */
@@ -50,7 +50,7 @@ $( document ).ready(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 700);
+        }, 800);
         return false;
           }
         }

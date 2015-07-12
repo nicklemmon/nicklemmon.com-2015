@@ -5,8 +5,6 @@
 @import 'bourbon/bourbon';
 /* importing Bourbon Neat */
 @import 'neat/neat';
-/* importing hover.scss */
-@import 'hover/hover';
 /* importing misc. variables */
 @import 'vars/_vars';
 /* importing color variables */
@@ -30,8 +28,6 @@ body {
     font-size: 1.1em;
     text-align: center;
 }
-
-
 
 section {
     padding: $default-padding 0 $default-padding*2 0;
@@ -79,7 +75,8 @@ img {
     transition: all $default-transition ease;
 }
 
-    .btn:hover {
+    .btn:hover,
+	.btn:focus {
         color: white;
         transition: all $default-transition ease;
     }
@@ -93,8 +90,9 @@ img {
 		text-transform: uppercase;
     }
 
-        .btn.call-to-action:hover {
-            background: rgba(0,0,0,.2);
+        .btn.call-to-action:hover,
+		.btn.call-to-action:focus {
+            background: rgba(0,0,0,.3);
             
         }
 
@@ -102,7 +100,8 @@ img {
         background: $reg-button-color;
     }
 
-        .btn.regular:hover {
+        .btn.regular:hover,
+		.btn.regular:focus {
             background: darken($reg-button-color, 10%);
         }
 

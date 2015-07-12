@@ -1,16 +1,16 @@
-/*===== RESUME STYLES =====*/
+/*===== skills STYLES =====*/
 
-section.resume {
+section.skills {
     background: $dark-base-color;
     color: white;
     @include clearfix();
 }
 
-    section.resume dl {
+    section.skills dl {
         border-bottom: 1px solid white;
     }
 
-    section.resume p {
+    section.skills p {
         color: white;
     }
 
@@ -89,7 +89,7 @@ section.resume {
                     }
 
 
-/*===== RESUME MEDIA QUERIES =====*/
+/*===== skills MEDIA QUERIES =====*/
 
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {  

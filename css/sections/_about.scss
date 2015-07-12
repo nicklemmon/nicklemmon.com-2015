@@ -15,7 +15,7 @@ section.about {
 
 	.about-info {
 		display: inline-block;
-        //background-color: rgba(28,222,176,.7);
+        min-width: 100%; /* prevents width re-sizing based on content */
 		margin-bottom: $default-margin*2;
 	}
 
@@ -34,8 +34,10 @@ section.about {
 		}
 
 		ul.tabs li{
-			text-transform: lowercase;
-			background: rgba(28,222,176,.7);
+			text-transform: uppercase;
+			font-weight: 200;
+			letter-spacing: 2px;
+			background: rgba(28,222,176,.8);
 			display: inline-block;
 			padding: $default-padding;
 			cursor: pointer;
@@ -43,26 +45,39 @@ section.about {
 			@include transition(all $default-transition ease);
 		}
 
+			ul.tabs li:hover {
+				-webkit-box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
+				-moz-box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
+				box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
+				@include transition(all $default-transition ease);
+			}
+
 			ul.tabs li[data-tab="tab-1"] {
-				
+				/*background: url(/images/icons/happy.svg) rgba(28,222,176,.7) no-repeat;
+				background-position: 50% 40px;*/
 			}
 
 			ul.tabs li[data-tab="tab-2"] {
-				
+				/*background: url(/images/icons/images.svg) rgba(28,222,176,.7) no-repeat;
+				background-position: 50% 40px;*/
 			}
 
 			ul.tabs li[data-tab="tab-3"] {
-				
+				/*background: url(/images/icons/file-text.svg) rgba(28,222,176,.7) no-repeat;
+				background-position: 50% 40px;*/
 			}
 
 		ul.tabs li.current{
-			background-color: rgba(28,222,176,.8);
+			background-color: rgba(28,222,176,.9);
+			-webkit-box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
+			-moz-box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
+			box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
 			@include transition(all $default-transition ease);
 		}
 
 		.tab-content{
 			display: none;
-			min-height: 300px;
+			min-height: 340px;
 			padding: $default-padding;
 		}
 
@@ -71,29 +86,64 @@ section.about {
 			@include display(flex);
 			@include align-items(center);
 			@include justify-content(center);
-			background-color: rgba(28,222,176,.8);
+			@include flex-direction(column);
+			background-color: rgba(28,222,176,.9);
 		}
 
-    section.about p {
+    section.about p,
+	section.about .tab-content.current a {
         color: white;
         font-weight: 300;
         font-size: 1.3rem;
 		max-width: 80%;
     }
 
+	section.about .tab-content.current a {
+		display: inline-block;
+		text-transform: lowercase;
+		padding: 25px 0px 5px 0px;
+		border-bottom: 1px solid rgba(0,0,0,0); /* adds invisible border so hover doesn't displace content vertically */
+		@include transition(all $default-transition ease);
+	}
+
+		section.about .tab-content.current a:hover {
+			border-bottom: 1px solid white;
+		}
+		
+		section.about .tab-content.current a#skills-link {
+			background: url(/images/icons/resume-white.svg) no-repeat 50% 0%;
+			background-size: 20px;
+		}
+
+		section.about .tab-content.current a#portfolio-link {
+			background: url(/images/icons/portfolio-white.svg) no-repeat 50% 0%;
+			background-size: 25px;
+		}
+	
+
 /*=== BEGIN ABOUT MEDIA QUERIES ===*/
 
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {  
 	
-	section.about h1 {
-		max-width: 100%;
-		font-weight: 300 !important;
-	}
-    
-    section.about {
-        padding-top: $default-padding*2;
+  	section.about {
+        padding-top: $default-padding;
     }
+	
+		section.about h1 {
+			font-size: 2.75em;
+			max-width: 100%;
+			//font-weight: 300 !important;
+		}
+	
+		.about-info {
+
+		}
+	
+			ul.tabs {
+				display: none;
+			}
+	
 }
 
 /* Small devices (tablets, 768px to 992px) */ 
