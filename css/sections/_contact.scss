@@ -8,6 +8,19 @@ section.contact {
         display: inline;
     }
 
+	section.contact:before {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        background: $dark-base-color;
+        max-width: $default-margin*6;
+        height: 5px;
+    }
+
+		section.contact .sub-container {
+			margin-top: $default-margin*2;
+		}
+
         input,
         textarea {
             width: 100%;

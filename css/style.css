@@ -178,7 +178,6 @@ nav {
 }
 
 .navbar-nav li a:hover {
-  color: gray !important;
   border-top: 3px solid #1cdeb0;
   transition: all 0.3s ease;
 }
@@ -353,8 +352,8 @@ footer.about .tab-content.current a {
 
 section.about .tab-content.current a, footer.about .tab-content.current a {
   display: inline-block;
-  text-transform: lowercase;
-  padding: 25px 0px 5px 0px;
+  text-transform: uppercase;
+  padding: 40px 0px 5px 0px;
   border-bottom: 1px solid transparent;
   /* adds invisible border so hover doesn't displace content vertically */
   -webkit-transition: all 0.3s ease;
@@ -367,13 +366,13 @@ section.about .tab-content.current a:hover, footer.about .tab-content.current a:
 }
 
 section.about .tab-content.current a#skills-link, footer.about .tab-content.current a#skills-link {
-  background: url(/images/icons/resume-white.svg) no-repeat 50% 0%;
-  background-size: 20px;
+  background: url(/images/icons/resume-white.svg) no-repeat 50% 7px;
+  background-size: 25px;
 }
 
 section.about .tab-content.current a#portfolio-link, footer.about .tab-content.current a#portfolio-link {
   background: url(/images/icons/portfolio-white.svg) no-repeat 50% 0%;
-  background-size: 25px;
+  background-size: 30px;
 }
 
 /*=== BEGIN ABOUT MEDIA QUERIES ===*/
@@ -415,6 +414,11 @@ section.about .tab-content.current a#portfolio-link, footer.about .tab-content.c
   }
 }
 /*===== BIO STYLES =====*/
+section.bio, footer.bio {
+  padding-bottom: 20px !important;
+  /* makes two white sections have a liiiittle less space between */
+}
+
 section.bio img, footer.bio img {
   border-radius: 50%;
   border: 8px solid #e0e0e0;
@@ -426,15 +430,6 @@ section.bio img, footer.bio img {
 section.portfolio, footer.portfolio {
   padding-top: 0;
   overflow: hidden;
-}
-
-section.portfolio:before, footer.portfolio:before {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  background: #333333;
-  max-width: 240px;
-  height: 5px;
 }
 
 section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
@@ -809,6 +804,19 @@ section.contact form, footer.contact form {
   display: inline;
 }
 
+section.contact:before, footer.contact:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  background: #333333;
+  max-width: 240px;
+  height: 5px;
+}
+
+section.contact .sub-container, footer.contact .sub-container {
+  margin-top: 80px;
+}
+
 input,
 textarea {
   width: 100%;
@@ -982,7 +990,7 @@ img {
 
 .btn.regular:hover,
 .btn.regular:focus {
-  background: #16b18c;
+  background: #19c79e;
 }
 
 /*===== HEADER HIERARCHY =====*/

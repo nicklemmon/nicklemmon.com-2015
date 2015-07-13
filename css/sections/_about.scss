@@ -100,8 +100,8 @@ section.about {
 
 	section.about .tab-content.current a {
 		display: inline-block;
-		text-transform: lowercase;
-		padding: 25px 0px 5px 0px;
+		text-transform: uppercase;
+		padding: 40px 0px 5px 0px;
 		border-bottom: 1px solid rgba(0,0,0,0); /* adds invisible border so hover doesn't displace content vertically */
 		@include transition(all $default-transition ease);
 	}
@@ -111,13 +111,13 @@ section.about {
 		}
 		
 		section.about .tab-content.current a#skills-link {
-			background: url(/images/icons/resume-white.svg) no-repeat 50% 0%;
-			background-size: 20px;
+			background: url(/images/icons/resume-white.svg) no-repeat 50% 7px;
+			background-size: 25px;
 		}
 
 		section.about .tab-content.current a#portfolio-link {
 			background: url(/images/icons/portfolio-white.svg) no-repeat 50% 0%;
-			background-size: 25px;
+			background-size: 30px;
 		}
 	
 

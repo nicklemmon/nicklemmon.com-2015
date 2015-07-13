@@ -40,7 +40,6 @@ nav {
         }
         
             .navbar-nav li a:hover {
-                color: lighten($dark-text-color, 30%) !important;
 				border-top: 3px solid $light-base-color;
 				transition: all $default-transition ease;
             }
