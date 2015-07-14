@@ -12,7 +12,7 @@ $( document ).ready(function() {
 	});
 
     /*===== functions for section.portfolio to bring in detailed view of each .work-item =====*/
-    $(".work-item").click(function() { /* when the user clicks on a .work-item... */
+    $(".work-item-unit").click(function() { /* when the user clicks on a .work-item... */
         $(".work-focus").removeClass("remove"); /* ...remove the class .remove from .work-focus... */
         $(".work-container").addClass("remove"); /* ...add the class .remove to .work-container... */
         $(".work-focus").addClass("slide"); /* ...and finally ad the class .slide to .work-focus */
