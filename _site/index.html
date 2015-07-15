@@ -4,29 +4,32 @@
 	<head>
 
 		<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Quisque sed eros sit amet massa finibus consequat. Fusce efficitur ullamcorper laoreet. Nulla luctus velit sit amet fringilla auctor. Nullam faucibus porttitor mauris, et tempor ex maximus sit amet. Fusce molestie imperdiet commodo. Sed sagittis porttitor libero. Proin et ipsum at leo volutpat sagittis eu sit amet ex. Nulla congue malesuada metus at cursus."> <!-- description meta tag -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Quisque sed eros sit amet massa finibus consequat. Fusce efficitur ullamcorper laoreet. Nulla luctus velit sit amet fringilla auctor. Nullam faucibus porttitor mauris, et tempor ex maximus sit amet. Fusce molestie imperdiet commodo. Sed sagittis porttitor libero. Proin et ipsum at leo volutpat sagittis eu sit amet ex. Nulla congue malesuada metus at cursus."> <!-- description meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
-<title>Nick Lemmon - front end web designer and developer in Durham, NC</title>
+        <title>Nick Lemmon - front end web designer and developer in Durham, NC</title>
 
-<!-- CSS reset -->
-<link href="/css/cssreset5.css" rel="stylesheet">
-<!-- Bootstrap - navbar only! -->
-<link href="/css/bootstrap.min.css" rel="stylesheet">
-<!-- stylesheet (produced via style.scss) -->
-<link href="/css/style.css" rel="stylesheet">
+        <!-- normalize.css -->
+        <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+        <!-- Bootstrap - navbar only! -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <!-- stylesheet (produced via style.scss) -->
+        <link href="/css/style.css" rel="stylesheet">
 
-<!-- web fonts go here! -->
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]--> <!-- Jekylle include for head.html -->
+        <!-- web fonts go here! -->
+        <!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Old+Standard+TT:400,400italic' rel='stylesheet' type='text/css'>-->
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
 	</head> <!-- end head -->
 
@@ -34,62 +37,231 @@
 
 		<nav class="navbar navbar-default" role="navigation">
 
-    <div class="container-fluid"><span>
+            <div class="sub-container">
 
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><span>Nick Lemmon</span></a>
-      </div>
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span>Nick Lemmon</span></a>
+              </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="link-1-icon" href="#">Link 1</a></li>
-          <li><a class="link-2-icon" href="#">Link 2</a></li>
-          <li><a class="link-3-icon" href="#">Link 3</a></li>
-        </ul>
-      </div> <!-- end .navbar-collapse -->
-    </span></div> <!-- end .container-fluid -->
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a class="bio" href="#bio">Bio</a></li>
+                  <li><a class="portfolio" href="#portfolio">Work</a></li>
+                  <li><a class="skills" href="#skills">skills</a></li>
+                  <li><a class="contact" href="#contact">Contact</a></li>
+                </ul>
+              </div> <!-- end .navbar-collapse -->
+            </div> <!-- end .sub-container -->
 
-</nav> <!-- end .navbar-default --> <!-- Jekyll include for navbar.html -->
+        </nav> <!-- end .navbar-default -->
 
         <!--========== BEGIN CONTENT ==========-->
 		<div class="content container-full">
             
-            <section class="about">
+            <!--===== BEGIN ABOUT =====-->
+            <section class="about" id="about">
+                <div class="sub-container">
                 
-                <h1>Front-end web design in Durham, NC</h1>
-                
-                <p>I'm a front-end web designer (and developer) who illustrates from time-to-time. Check out my work, and if you like what you see, get in touch.</p>
-                
-                <a class="btn call-to-action">Get your scroll on</a>
-            
+					<div class="about-info">
+                    
+						<div id="tab-1" class="tab-content current">
+							<h1>Front-end web designer in Durham, NC</h1>
+						</div> <!-- end #tab-1 -->
+						<div id="tab-2" class="tab-content">
+							<p>I write 'hand-crafted' HTML and CSS (via SASS) to make web-standard websites. I add in JavaScript and jQuery for a little extra spice.</p>
+							<a id="skills-link" href="#skills">My skills</a>
+						</div> <!-- end #tab-2 -->
+						<div id="tab-3" class="tab-content">
+							<p>I have a few logo designs, websites, and illustrations that show my style. Take a look.</p>
+							<a id="portfolio-link" href="#portfolio">My portfolio</a>
+						</div> <!-- end #tab-3 -->
+						
+						<ul class="tabs">
+							<li class="tab-link current" data-tab="tab-1">Introduction</li>
+							<li class="tab-link" data-tab="tab-2">Skills</li>
+							<li class="tab-link" data-tab="tab-3">Portfolio</li>
+						</ul>
+						
+					</div> <!-- end .about-info -->
+
+                    <!--<p>I'm a front-end web designer (and developer) who illustrates from time-to-time. Check out my work, and if you like what you see, get in touch.</p>-->
+
+                    <a class="btn call-to-action" href="#portfolio">See my work</a>
+                    
+                </div> <!-- end .sub-container -->
             </section> <!-- end section.about -->
             
-            <section class="bio">
-                
-            </section> <!-- end section.bio -->
-            
-            <section class="portfolio">
-            
+            <!--===== BEGIN PORTFOLIO =====-->
+            <section class="portfolio" id="portfolio">
+                <div class="first sub-container">
+                    <h2>My work</h2>
+                    <p>A sample of some illustrations, websites, and logo designs for small businesses, individuals, and projects.</p>  
+                </div>
+                <div class="sub-container">
+                    <div class="work-belt">
+
+                        <div class="work-container">
+                            <div class="row">
+								<a class="work-item-unit" href="#work-focus">
+									<img src="/images/portfolio/item-01/thumbnail.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Strength and Sport<p></div>
+								</a>
+                                <a class="work-item-unit" href="#work-focus">
+									<img src="/images/portfolio/item-02/thumbnail.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Rent Otter</p></div>
+								</a>
+                                <a class="work-item-unit" href="#work-focus">
+									<img src="/images/portfolio/item-03/thumbnail.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Big Picture Films</p></div>
+								</a>
+                            </div>
+                            <div class="row">
+                                <a class="work-item-unit" href="#work-focus">
+									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+								</a>
+                                <a class="work-item-unit" href="#work-focus">
+									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+								</a>
+                                <a class="work-item-unit" href="#work-focus">
+									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+								</a>
+                            </div>
+                            <div class="row">
+                                <a class="work-item-unit" href="#work-focus">
+									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+								</a>
+                                <a class="work-item-unit" href="#work-focus">
+									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+								</a>
+                                <a class="work-item-unit" href="#work-focus">
+									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+								</a>
+                            </div>
+                        </div> <!-- end .work-container -->
+
+                        <div id="work-focus" class="work-focus">
+                            
+							<div class="sub-container">
+								<a href="#portfolio" class="return">Return</a>
+								<h3>Lorem ipsum dolor sit amet</h3>
+								<p>Curabitur ornare convallis cursus. Donec sit amet diam eleifend, posuere ipsum vitae, iaculis nisi. Phasellus varius rhoncus felis, sed ultrices nisi feugiat at. Vivamus luctus auctor dolor non euismod. Mauris id tincidunt neque. Mauris pretium quis risus a vehicula. Phasellus a maximus est. Mauris et dapibus lorem.</p>
+								<img src="/images/portfolio/item-01/img-1.png" width="100%" height="100%">
+								<img src="/images/portfolio/item-01/img-2.png" width="100%" height="100%">
+								<img src="/images/portfolio/item-01/img-3.png" width="100%" height="100%">
+
+								<br> <!-- adds break that fixes .return not clearing images --> 
+								<a href="#portfolio" class="return">Return</a>
+							</div>
+							
+                        </div> <!-- end .work-focus -->
+						
+                    </div> <!-- end .work-belt -->
+                </div> <!-- end .sub-container -->
             </section> <!-- end section.portfolio -->
             
-            <section class="contact">
+            <!--===== BEGIN skills =====-->
+            <section class="skills" id="skills">
+                <div class="sub-container">
+                    
+                    <h2>My skills</h2>
+                    
+                    <p>I'm relatively new to the field, but I have years of experience with the creative process, illustration, and design.</p>
+                    
+                    <dl>
+                        <div class="definition">
+                            <dt id="html">HTML</dt>
+                            <dd>I use hand-coded, semantic markup where possible, excessive &lt;div&gt;s and &lt;span&gt;s where not (only kidding)</dd>
+                        </div>
+                        <div class="definition">
+                            <dt id="css-and-sass" class="move">CSS and SASS</dt>
+                            <dd>I have experience with both strict CSS and SASS (.scss FTW!), both used to make responsive, user-friendly designs</dd>
+                        </div>
+                        <div class="definition">
+                            <dt id="javascript-and-jquery">JavaScript and jQuery</dt>
+                            <dd>Though not a JS wizard, I know how to hack around most problems, and come up with a solution</dd>
+                        </div>
+                        <div class="definition">
+                            <dt id="jekyll">Jekyll</dt>
+                            <dd>I fell in love in early 2015 and never looked back - an anti-CMS for the ages</dd>
+                        </div>
+                        <div class="definition">
+                            <dt id="illustration-and-vector-art">Illustration and vector art</dt>
+                            <dd>I have been doodling and creating since I was a toddler, and I've never looked back</dd>
+                        </div>
+                        <div class="definition">
+                            <dt id="logo-design">Logo design</dt>
+                            <dd>I create logo designs with strong typography often paired with custom illustration</dd>
+                        </div>
+                    </dl>
+                
+                </div>
+            </section> <!-- end section.skills -->
+			
+			<!--===== BEGIN BIO =====-->
+            <section class="bio" id="bio">
+                <div class="sub-container">
+                    
+                    <h2>About me</h2>
+                    
+                    <img src="/images/me.jpg" height="100%" width="100%"/>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis, orci eu consequat pulvinar, orci nunc fermentum nunc, vitae faucibus mi risus id orci. Fusce non posuere dolor, efficitur tristique orci. Donec a vehicula arcu. Cras aliquam blandit dignissim.</p>
+                
+                </div>
+            </section> <!-- end section.bio -->
             
-            </section> <!-- end section.contact -->            
-
+            <!--===== BEGIN CONTACT =====-->
+            <section class="contact" id="contact">
+                <div class="sub-container">
+                    
+                    <h2>Contact</h2>
+                    
+                    <p>If you have work, or have questions about my portfolio, I'm happy to chat. Send me a message and we'll go from there.</p>
+                    
+                    <form>
+                        <input name="first-name" placeholder="first name" required>
+                        <label for="first-name">First name</label>
+                        <input name="last-name" placeholder="last name">
+                        <label for="last-name">Last name</label>
+                        <input type="email" placeholder="email address" required>
+                        <label for="email">E-mail address</label>
+                        <textarea name="message" placeholder="your message"></textarea>
+                        <label for="message">Enter your message</label>
+                        <input class="btn regular" type="submit" value="Go">
+                    </form>
+                
+                </div>
+            </section> <!-- end section.contact -->   
+            
 		</div> <!-- end .content -->
+        
         <!--========== BEGIN FOOTER ==========-->
 		<footer>
             
-
-			
+            <ol>
+                <li><a href="#about">About the site</a></li>
+                <li><a href="#bio">About me</a></li>
+                <li><a href="#portfolio">My work</a></li>
+                <li><a href="#skills">My skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+            
+            <p>All rights reserved, <a href="/index.html">Nick Lemmon</a> 2015</p>
+            
 		</footer> <!-- end footer -->
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

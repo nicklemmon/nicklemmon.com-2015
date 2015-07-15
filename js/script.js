@@ -11,7 +11,7 @@ $( document ).ready(function() {
 		$("#"+tab_id).addClass('current');
 	});
 
-    /*===== functions for section.portfolio to bring in detailed view of each .work-item =====*/
+    /*===== function for section.portfolio to bring in detailed view of each .work-item =====*/
     $(".work-item-unit").click(function() { /* when the user clicks on a .work-item... */
         $(".work-focus").removeClass("remove"); /* ...remove the class .remove from .work-focus... */
         $(".work-container").addClass("remove"); /* ...add the class .remove to .work-container... */
@@ -28,8 +28,18 @@ $( document ).ready(function() {
                                                 $(this).dequeue();
                                                });  /* ...and remove the class .remove from .work-container */
     });
+	
+	/*===== function to load content in to .work-focus when clicking on each .work-item thumbnail ======*/ 
+	$.ajaxSetup({ cache: true });
+
+	$(".work-item-unit").click(function() { /* JUMP IN RIGHT HERE!! FIX THIS ISH */
+		var workNum = $(this).data-worknum;
+
+		$('.project-load').html(spinner).load(newHTML);
+		$('.project-title').text(newTitle);
+	});
     
-    /*===== functions for section.skills to 'open' each skills skill and display the <dd> =====*/
+    /*===== function for section.skills to 'open' each skills skill and display the <dd> =====*/
     $(".definition").click(function(){
         var dd = $(this).children("dd");
         if (  !(dd.hasClass("show"))  ) { /* if the <dd> element does NOT have a class of .show... */
