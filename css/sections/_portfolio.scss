@@ -1,7 +1,6 @@
 /*===== PORTFOLIO STYLES =====*/
 
 section.portfolio {
-    padding-top: 0;
     overflow: hidden;
 }
 
@@ -55,8 +54,8 @@ section.portfolio {
 
 					.overlay p {
 						color: white;
+						font-size: 1rem;
 						text-transform: uppercase;
-						font-weight: 200;
 						max-width: 100%;
 						padding: 0px;
 					}
@@ -78,13 +77,12 @@ section.portfolio {
                 cursor: pointer;
             }
 
-
         .work-focus {
             height: 0; opacity: 0; /* hides the element so as not to impact height of the entire section */
             visibility: hidden;
             background: white;
             max-width: 100%; /* half of 200% is 100% */
-            padding-top: $default-padding;
+            padding-top: $default-padding/2;
             padding-bottom: $default-padding;
             position: relative;
             left: -100%;
@@ -98,7 +96,7 @@ section.portfolio {
                 background: white;
                 visibility: visible;
                 left: -50%;
-                @include transition(left $default-transition*3 ease, opacity $default-transition*2 ease);
+                @include transition(left $default-transition*2 ease, opacity $default-transition*2 ease);
             }
 
             .work-container.remove, .work-focus.remove {
@@ -116,10 +114,6 @@ section.portfolio {
                 cursor: pointer;
             }
 
-			.work-focus img {
-				border: 1px solid lighten($light-text-color, 20%);
-			}
-
             .work-focus p {
                 font-size: 1rem;
                 color: lighten($light-text-color, 20%);
@@ -132,8 +126,8 @@ section.portfolio {
 @media (max-width: 768px) {
     
     section.portfolio {
-        padding: 0 !important;
-    }
+        padding: $default-padding/2;
+	}
     
     .work-container {
         margin-bottom: $default-margin;
@@ -142,6 +136,7 @@ section.portfolio {
         .work-container .row {
             @include display(flex);
             @include flex-direction(row);
+			@include justify-content(center);
             @include align-items(center);
             @include flex-wrap(wrap);
             max-width: 100% !important;
@@ -156,6 +151,10 @@ section.portfolio {
         padding: 0;
         max-width: 100% !important;
     }
+	
+	.overlay p {
+		font-size: 1.5rem;
+	}
     
     .work-focus .return {
         margin-right: -40px !important; /* centers right arrow on small screens */

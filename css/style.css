@@ -172,12 +172,16 @@ nav {
   background-size: 20px !important;
   color: #333333 !important;
   border-top: 0px solid #1cdeb0;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .navbar-nav li a:hover {
   border-top: 3px solid #1cdeb0;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .navbar-nav li a.bio {
@@ -426,7 +430,6 @@ section.bio img, footer.bio img {
 
 /*===== PORTFOLIO STYLES =====*/
 section.portfolio, footer.portfolio {
-  padding-top: 0;
   overflow: hidden;
 }
 
@@ -555,8 +558,8 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
 
 .overlay p {
   color: white;
+  font-size: 1rem;
   text-transform: uppercase;
-  font-weight: 200;
   max-width: 100%;
   padding: 0px;
 }
@@ -591,7 +594,7 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
   background: white;
   max-width: 100%;
   /* half of 200% is 100% */
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 60px;
   position: relative;
   left: -100%;
@@ -627,9 +630,9 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
   background: white;
   visibility: visible;
   left: -50%;
-  -webkit-transition: left 0.9s ease, opacity 0.6s ease;
-  -moz-transition: left 0.9s ease, opacity 0.6s ease;
-  transition: left 0.9s ease, opacity 0.6s ease;
+  -webkit-transition: left 0.6s ease, opacity 0.6s ease;
+  -moz-transition: left 0.6s ease, opacity 0.6s ease;
+  transition: left 0.6s ease, opacity 0.6s ease;
 }
 
 .work-container.remove, .work-focus.remove {
@@ -651,10 +654,6 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
   cursor: pointer;
 }
 
-.work-focus img {
-  border: 1px solid #adadad;
-}
-
 .work-focus p {
   font-size: 1rem;
   color: #adadad;
@@ -665,7 +664,7 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
   section.portfolio, footer.portfolio {
-    padding: 0 !important;
+    padding: 30px;
   }
 
   .work-container {
@@ -687,6 +686,15 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
     -moz-flex-direction: row;
     flex-direction: row;
     -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
     -webkit-box-align: center;
     -moz-box-align: center;
     box-align: center;
@@ -714,6 +722,10 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
   .work-focus .sub-container {
     padding: 0;
     max-width: 100% !important;
+  }
+
+  .overlay p {
+    font-size: 1.5rem;
   }
 
   .work-focus .return {
@@ -795,7 +807,7 @@ section.skills p, footer.skills p {
 .definition dt {
   font-weight: 300;
   line-height: 130%;
-  padding: 120px 30px 60px 30px;
+  padding: 120px 30px 66px 30px;
   width: 200px;
   margin-right: -40px;
   /* hacky fix to broken center alignment */
