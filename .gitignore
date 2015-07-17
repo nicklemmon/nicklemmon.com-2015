@@ -45,3 +45,6 @@ Temporary Items
 # Folders no one needs
 .sass-cache
 .sass-cache/*
+
+# Asset files
+*.ai

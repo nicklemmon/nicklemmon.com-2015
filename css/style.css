@@ -551,6 +551,7 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
   height: 120px;
   background: rgba(28, 222, 176, 0.8);
   padding: 30px;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;

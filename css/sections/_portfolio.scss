@@ -48,6 +48,7 @@ section.portfolio {
 					height: 120px;
 					background: rgba(28,222,176,.8);
 					padding: 30px;
+					cursor: pointer;
 					//@include transform(rotate(90deg));
 					@include transition(all $default-transition ease);
 				}
