@@ -16,6 +16,8 @@ $( document ).ready(function() {
 
 	$(".work-item-unit").click(function() {
 		var worknum = $(this).attr("data-worknum"); /* declares variable that stores the data for the 'data-worknum' attribute... */
+        //var spinner = '<div class="loader">Loading...</div>';
+        
 		$(".work-focus-content").load("_includes/portfolio/work-focus-" + worknum + ".html"); /* ...which is then used to dynamically load the appropriate content */
 	});
 
