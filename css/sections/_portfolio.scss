@@ -81,7 +81,6 @@ section.portfolio {
         .work-focus {
             height: 0; opacity: 0; /* hides the element so as not to impact height of the entire section */
             visibility: hidden;
-            background: white;
             max-width: 100%; /* half of 200% is 100% */
             padding-top: $default-padding/2;
             padding-bottom: $default-padding;
@@ -115,10 +114,18 @@ section.portfolio {
                 cursor: pointer;
             }
 
+			.work-focus h3 {
+				margin-top: $default-margin;
+				
+			color: $light-text-color;
+			}
+
             .work-focus p {
                 font-size: 1rem;
-                color: lighten($light-text-color, 20%);
+				font-weight: 300;
                 line-height: 145%;
+				margin-bottom: $default-margin;
+				color: $dark-base-color;
             }
 
 /*=== BEGIN GLOBAL MEDIA QUERIES ===*/

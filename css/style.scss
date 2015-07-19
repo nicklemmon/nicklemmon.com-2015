@@ -66,6 +66,8 @@ img {
     font-size: 1rem;
     font-family: $secondary-font-stack;
     color: white;
+	background: $light-base-color;
+	margin-bottom: $default-margin;
     padding: 10px 30px;
     border-radius: 8px;
     cursor: pointer;
@@ -75,6 +77,7 @@ img {
     .btn:hover,
 	.btn:focus {
         color: white;
+		background: darken($light-base-color, 5%);
         transition: all $default-transition ease;
     }
 
@@ -125,11 +128,15 @@ h2 {
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+	max-width: 300px;
     font-family: $secondary-font-stack;
     font-weight: 300;
     text-transform: lowercase;
-    margin-bottom: $default-margin/2;
+	padding-bottom: $default-padding/4;
+	border-bottom: 1px solid lighten($light-text-color, 40%);
+	margin: 0 auto;
+    margin-bottom: $default-padding/4;
 }
 
 h4 {

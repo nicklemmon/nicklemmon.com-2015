@@ -41,7 +41,7 @@ section.about {
 			display: inline-block;
 			padding: $default-padding;
 			cursor: pointer;
-			width: 33.33%;
+			width: percentage(1/3);
 			@include transition(all $default-transition ease);
 		}
 

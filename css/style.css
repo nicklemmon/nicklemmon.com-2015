@@ -260,7 +260,7 @@ ul.tabs li {
   display: inline-block;
   padding: 60px;
   cursor: pointer;
-  width: 33.33%;
+  width: 33.33333%;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -592,7 +592,6 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
   opacity: 0;
   /* hides the element so as not to impact height of the entire section */
   visibility: hidden;
-  background: white;
   max-width: 100%;
   /* half of 200% is 100% */
   padding-top: 30px;
@@ -655,10 +654,17 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
   cursor: pointer;
 }
 
+.work-focus h3 {
+  margin-top: 40px;
+  color: #7a7a7a;
+}
+
 .work-focus p {
   font-size: 1rem;
-  color: #adadad;
+  font-weight: 300;
   line-height: 145%;
+  margin-bottom: 40px;
+  color: #333333;
 }
 
 /*=== BEGIN GLOBAL MEDIA QUERIES ===*/
@@ -1102,6 +1108,8 @@ img {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   color: white;
+  background: #1cdeb0;
+  margin-bottom: 40px;
   padding: 10px 30px;
   border-radius: 8px;
   cursor: pointer;
@@ -1111,6 +1119,7 @@ img {
 .btn:hover,
 .btn:focus {
   color: white;
+  background: #19c79e;
   transition: all 0.3s ease;
 }
 
@@ -1159,11 +1168,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  max-width: 300px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   text-transform: lowercase;
-  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 h4 {
