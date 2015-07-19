@@ -59,8 +59,8 @@ section.skills {
                 }
 
                     .definition dt#html {
-                        background: url(/images/icons/html5.svg) no-repeat 50% $default-padding;
-                        background-size: 50px;
+                        background: url(/images/icons/html5.svg) no-repeat 50% $default-padding*1.1;
+                        background-size: 45px;
                     }
 
                     .definition dt#css-and-sass {

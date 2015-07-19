@@ -667,6 +667,11 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
   color: #333333;
 }
 
+.work-focus img {
+  display: border-box;
+  margin-bottom: 0;
+}
+
 /*=== BEGIN GLOBAL MEDIA QUERIES ===*/
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
@@ -850,8 +855,8 @@ section.skills p, footer.skills p {
 }
 
 .definition dt#html {
-  background: url(/images/icons/html5.svg) no-repeat 50% 60px;
-  background-size: 50px;
+  background: url(/images/icons/html5.svg) no-repeat 50% 66px;
+  background-size: 45px;
 }
 
 .definition dt#css-and-sass {
