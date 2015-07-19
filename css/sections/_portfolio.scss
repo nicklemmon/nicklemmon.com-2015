@@ -108,16 +108,22 @@ section.portfolio {
             .work-focus .return {
                 display: inline-block;
                 text-indent: -9999px;
-                margin-bottom: -$default-margin;
-                @include size(80px);
-                background: url(/images/icons/arrow-left.svg) no-repeat;
+                margin-bottom: $default-margin/4;
+                @include size(60px);
+                background: url(/images/icons/arrow-left.svg) 50% 50% no-repeat;
                 cursor: pointer;
+				border-bottom: 1px solid rgba(0,0,0,0);
+				@include transition(all $default-transition ease);
             }
 
+				.work-focus .return:hover {
+					border-bottom: 1px solid $dark-base-color;
+					@include transition(all $default-transition ease);
+				}
+
 			.work-focus h3 {
-				margin-top: $default-margin;
-				
-			color: $light-text-color;
+				margin-top: $default-margin/4;
+				color: $light-text-color;
 			}
 
             .work-focus p {
@@ -131,6 +137,10 @@ section.portfolio {
 			.work-focus img {
 				@include display(border-box);
 				margin-bottom: 0;
+			}
+
+			.work-focus br {
+				margin-bottom: $default-margin/2;
 			}
 
 /*=== BEGIN GLOBAL MEDIA QUERIES ===*/

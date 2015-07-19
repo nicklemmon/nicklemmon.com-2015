@@ -365,6 +365,9 @@ section.about .tab-content.current a, footer.about .tab-content.current a {
 
 section.about .tab-content.current a:hover, footer.about .tab-content.current a:hover {
   border-bottom: 1px solid white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 section.about .tab-content.current a#skills-link, footer.about .tab-content.current a#skills-link {
@@ -416,9 +419,14 @@ section.about .tab-content.current a#portfolio-link, footer.about .tab-content.c
   }
 }
 /*===== BIO STYLES =====*/
-section.bio, footer.bio {
-  padding-bottom: 20px !important;
-  /* makes two white sections have a liiiittle less space between */
+section.bio:before, footer.bio:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background: #333333;
+  max-width: 8.33333%;
+  height: 3px;
 }
 
 section.bio img, footer.bio img {
@@ -647,15 +655,26 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
 .work-focus .return {
   display: inline-block;
   text-indent: -9999px;
-  margin-bottom: -40px;
-  height: 80px;
-  width: 80px;
-  background: url(/images/icons/arrow-left.svg) no-repeat;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 60px;
+  background: url(/images/icons/arrow-left.svg) 50% 50% no-repeat;
   cursor: pointer;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.work-focus .return:hover {
+  border-bottom: 1px solid #333333;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .work-focus h3 {
-  margin-top: 40px;
+  margin-top: 10px;
   color: #7a7a7a;
 }
 
@@ -670,6 +689,10 @@ section.portfolio .first.sub-container, footer.portfolio .first.sub-container {
 .work-focus img {
   display: border-box;
   margin-bottom: 0;
+}
+
+.work-focus br {
+  margin-bottom: 20px;
 }
 
 /*=== BEGIN GLOBAL MEDIA QUERIES ===*/
@@ -827,7 +850,7 @@ section.skills p, footer.skills p {
 
 .definition dd {
   visibility: hidden;
-  color: #7a7a7a;
+  color: white;
   font-size: 1rem;
   opacity: 0;
   height: 0;
@@ -890,21 +913,13 @@ section.skills p, footer.skills p {
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 /*===== CONTACT STYLES =====*/
+section.contact, footer.contact {
+  padding-bottom: 40px;
+  /* slightly less padding for this section */
+}
+
 section.contact form, footer.contact form {
   display: inline;
-}
-
-section.contact:before, footer.contact:before {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  background: #333333;
-  max-width: 240px;
-  height: 5px;
-}
-
-section.contact .sub-container, footer.contact .sub-container {
-  margin-top: 80px;
 }
 
 input,
@@ -928,7 +943,7 @@ label {
   text-transform: uppercase;
   font-size: .8em;
   letter-spacing: 1px;
-  text-align: left;
+  text-align: center;
   margin-top: 5px;
   margin-bottom: 40px;
 }
@@ -938,8 +953,8 @@ textarea {
 }
 
 input[type="submit"] {
-  display: block !important;
-  float: left;
+  max-width: 80px;
+  margin: 0 auto;
   border: none !important;
   font-size: 1rem;
   font-family: "Lato", sans-serif !important;
@@ -947,7 +962,6 @@ input[type="submit"] {
   background: #1cdeb0;
   border-radius: 8px;
   cursor: pointer;
-  margin-bottom: 40px;
 }
 
 /*=== BEGIN CONTACT MEDIA QUERIES ===*/
@@ -1035,13 +1049,18 @@ footer {
 
 footer a {
   color: white;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-footer a:hover {
+footer ol li a:hover {
   color: white;
   background: #1a1a1a;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 footer ol {
@@ -1102,6 +1121,20 @@ p {
   color: #7a7a7a;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+p a {
+  color: #1cdeb0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+p a:hover {
+  color: #19c79e;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 img {

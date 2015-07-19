@@ -1,24 +1,15 @@
 /*===== CONTACT STYLES =====*/
 
 section.contact {
-    
+    padding-bottom: $default-padding - 20px; /* slightly less padding for this section */
 }
 
     section.contact form {
         display: inline;
     }
 
-	section.contact:before {
-        content: "";
-        display: block;
-        margin: 0 auto;
-        background: $dark-base-color;
-        max-width: $default-margin*6;
-        height: 5px;
-    }
-
 		section.contact .sub-container {
-			margin-top: $default-margin*2;
+			
 		}
 
         input,
@@ -42,7 +33,7 @@ section.contact {
             text-transform: uppercase;
             font-size: .8em;
             letter-spacing: 1px;
-            text-align: left;
+            text-align: center;
             margin-top: 5px;
             margin-bottom: $default-margin;
         }
@@ -52,8 +43,8 @@ section.contact {
         }
 
         input[type="submit"] {
-            display: block !important;
-            float: left;
+			max-width: $default-margin*2;
+			margin: 0 auto;
             border: none !important;
             font-size: 1rem;
             font-family: $secondary-font-stack !important;
@@ -61,7 +52,6 @@ section.contact {
             background: $reg-button-color;
             border-radius: 8px;
             cursor: pointer;
-            margin-bottom: $default-margin;
         }
 
 

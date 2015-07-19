@@ -57,6 +57,16 @@ p {
     margin-bottom: $default-margin;
 }
 
+	p a {
+		color: $light-base-color;
+		@include transition(all $default-transition ease);
+	}
+
+		p a:hover {
+			color: darken($light-base-color, 5%);
+			@include transition(all $default-transition ease);
+		}
+
 img {
     margin-bottom: $default-margin;
 }

@@ -1,8 +1,18 @@
 /*===== BIO STYLES =====*/
 
 section.bio {
-    padding-bottom: 20px !important; /* makes two white sections have a liiiittle less space between */
+    
 }
+
+	section.bio:before {
+        content: "";
+        display: block;
+        margin: 0 auto;
+		margin-bottom: $default-padding;
+        background: $dark-base-color;
+        max-width: percentage(1/12);
+        height: 3px;
+    }
 
     section.bio img {
         border-radius: 50%;

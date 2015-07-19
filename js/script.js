@@ -12,7 +12,7 @@ $( document ).ready(function() {
 	});
 	
 	/*===== function to load content in to .work-focus when clicking on each .work-item thumbnail ======*/ 
-	$.ajaxSetup({ cache: true });
+	//$.ajaxSetup({ cache: true });
 
 	$(".work-item-unit").click(function() {
 		var worknum = $(this).attr("data-worknum"); /* declares variable that stores the data for the 'data-worknum' attribute... */

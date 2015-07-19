@@ -108,6 +108,7 @@ section.about {
 
 		section.about .tab-content.current a:hover {
 			border-bottom: 1px solid white;
+			@include transition(all $default-transition ease);
 		}
 		
 		section.about .tab-content.current a#skills-link {
