@@ -5,9 +5,10 @@ section.contact {
 }
 
     section.contact form {
-        @include display(block);
+        @include display(border-box);
 		padding: $default-padding;
-		background: $light-base-color;
+		background: white;
+        border: 3px solid $light-base-color;
     }
 
 		section.contact .sub-container {
@@ -32,8 +33,8 @@ section.contact {
             display: block;
             font-family: $secondary-font-stack;
 			font-size: 1em;
-			font-weight: 200;
-            color: white;
+			font-weight: 300;
+            color: $dark-text-color;
             text-transform: uppercase;
             letter-spacing: 1px;
             text-align: center;
