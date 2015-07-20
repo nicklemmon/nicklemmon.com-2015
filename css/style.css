@@ -219,6 +219,7 @@ section.about, footer.about {
   display: inline-block;
   min-width: 100%;
   /* prevents width re-sizing based on content */
+  max-width: 100%;
   margin-bottom: 80px;
 }
 
@@ -395,10 +396,6 @@ section.about .tab-content.current a#portfolio-link, footer.about .tab-content.c
     font-size: 2.75em;
     max-width: 100%;
   }
-
-  ul.tabs {
-    display: none;
-  }
 }
 /* Small devices (tablets, 768px to 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
@@ -558,6 +555,9 @@ section.portfolio, footer.portfolio {
   width: 100%;
   height: 120px;
   background: rgba(28, 222, 176, 0.8);
+  -webkit-box-shadow: inset 0px -3px 0px 0px white;
+  -moz-box-shadow: inset 0px -3px 0px 0px white;
+  box-shadow: inset 0px -3px 0px 0px white;
   padding: 30px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -832,7 +832,7 @@ section.skills:after, footer.skills:after {
 }
 
 section.skills dl, footer.skills dl {
-  border-bottom: 1px solid white;
+  border-bottom: 3px solid white;
 }
 
 section.skills p, footer.skills p {
@@ -867,7 +867,7 @@ section.skills p, footer.skills p {
   -ms-flex-align: center;
   font-family: "Lato", sans-serif;
   cursor: pointer;
-  border-top: 1px solid white;
+  border-top: 3px solid white;
   max-height: 140px;
   overflow: hidden;
   /* fixes issue where re-sizing text changes the size of the container when clicking on .definition divs */
@@ -906,7 +906,7 @@ section.skills p, footer.skills p {
 }
 
 .definition:hover {
-  text-shadow: 3px 2px black !important;
+  text-shadow: 3px 0px black !important;
   background-color: #262626 !important;
   transition: all 0.3s ease;
 }

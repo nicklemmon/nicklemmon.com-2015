@@ -7,7 +7,7 @@ section.skills {
 }
 
     section.skills dl {
-        border-bottom: 1px solid white;
+        border-bottom: 3px solid white;
     }
 
     section.skills p {
@@ -20,7 +20,7 @@ section.skills {
             @include align-items(center);
             font-family: $secondary-font-stack;
             cursor: pointer;
-            border-top: 1px solid white;
+            border-top: 3px solid white;
             max-height: 140px;
             overflow: hidden; /* fixes issue where re-sizing text changes the size of the container when clicking on .definition divs */
         }
@@ -53,7 +53,7 @@ section.skills {
             }
 
                 .definition:hover {
-                    text-shadow: 3px 2px darken($dark-base-color, 100%) !important;
+                    text-shadow: 3px 0px darken($dark-base-color, 100%) !important;
                     background-color: darken($dark-base-color, 5%) !important;
                     transition: all $default-transition ease;
                 }
