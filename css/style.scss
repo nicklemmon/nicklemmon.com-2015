@@ -77,7 +77,7 @@ img {
     font-family: $secondary-font-stack;
     color: white;
 	background: $light-base-color;
-	margin-bottom: $default-margin;
+	margin: $default-margin/2 0 $default-margin/2 0;
     padding: 10px 30px;
     border-radius: 8px;
     cursor: pointer;
@@ -138,13 +138,11 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 	max-width: 300px;
     font-family: $secondary-font-stack;
     font-weight: 300;
-    text-transform: lowercase;
-	padding-bottom: $default-padding/4;
-	border-bottom: 1px solid lighten($light-text-color, 40%);
+    text-transform: uppercase;
 	margin: 0 auto;
     margin-bottom: $default-padding/4;
 }

@@ -31,11 +31,13 @@ nav {
     }
 
         .navbar-nav li a {
+			@include display(border-box);
             padding-left: 30px;
             margin-left: 20px;
             background-size: 20px !important;
             color: $dark-text-color !important;
-			border-top: 0px solid $light-base-color;
+			border-top: 3px solid rgba(0,0,0,0); /* creates invisible border to remove animation */
+			margin-top: -3px; /* adjustment to make up for invisible border */
             @include transition(all $default-transition/2 ease)
         }
         

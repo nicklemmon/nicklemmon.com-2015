@@ -5,7 +5,7 @@ section.portfolio {
 }
 
     section.portfolio .first.sub-container {
-        margin-top: $default-margin*2;
+        
     }
 
     .work-belt {
@@ -15,7 +15,6 @@ section.portfolio {
 
         .work-container {
             position: relative;
-            //left: 0%;
             margin: 0 auto;
             max-width: 50%;
             height: 100%; opacity: 1;
@@ -82,8 +81,7 @@ section.portfolio {
             height: 0; opacity: 0; /* hides the element so as not to impact height of the entire section */
             visibility: hidden;
             max-width: 100%; /* half of 200% is 100% */
-            padding-top: $default-padding/2;
-            padding-bottom: $default-padding;
+            padding-top: 0;
             position: relative;
             left: -100%;
             @include display(flex);
@@ -108,7 +106,7 @@ section.portfolio {
             .work-focus .return {
                 display: inline-block;
                 text-indent: -9999px;
-                margin-bottom: $default-margin/4;
+                margin-bottom: $default-margin;
                 @include size(60px);
                 background: url(/images/icons/arrow-left.svg) 50% 50% no-repeat;
                 cursor: pointer;
@@ -121,18 +119,53 @@ section.portfolio {
 					@include transition(all $default-transition ease);
 				}
 
+			.work-focus .work-info {
+				background: $dark-base-color;
+				color: white;
+				padding: $default-padding/4 $default-padding/2;
+				color: white;
+				max-width: 900px;
+				margin: 0 auto;
+			}
+
+				.work-focus .work-info .btn {
+					border: 3px solid #fff;
+					background: rgba(0,0,0,0);
+				}
+
+					.work-focus .work-info .btn:hover {
+						 background: rgba(0,0,0,.3);
+					}
+
 			.work-focus h3 {
 				margin-top: $default-margin/4;
-				color: $light-text-color;
 			}
+
+				.work-focus h3:after {
+					content: "";
+					display: block;
+					margin: 0 auto;
+					margin-top: $default-margin/2;
+					background: white;
+					max-width: percentage(1/2);
+					height: 3px;
+				}
 
             .work-focus p {
                 font-size: 1rem;
 				font-weight: 300;
-                line-height: 145%;
-				margin-bottom: $default-margin;
-				color: $dark-base-color;
+                line-height: 150%;
+				color: white;
+				margin-bottom: $default-margin/2;
             }
+
+				.work-focus p a {
+					text-decoration: underline;
+				}
+
+					.work-focus p a:hover {
+						color: darken($light-base-color, 5%);
+					}
 
 			.work-focus img {
 				@include display(border-box);
