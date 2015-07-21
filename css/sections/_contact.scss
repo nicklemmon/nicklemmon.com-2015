@@ -22,7 +22,9 @@ section.contact {
         }
 
         input {
-            display: inline-block;
+            @include display(inline-block);
+			outline-color: $dark-text-color;
+			@include transition(all $default-transition ease);
         }
 
         textarea {
@@ -49,7 +51,7 @@ section.contact {
         input[type="submit"] {
 			max-width: $default-margin*2;
 			margin: 0 auto;
-			border: 3px solid #fff;
+			border: 3px solid white;
             font-size: 1rem;
             font-family: $secondary-font-stack !important;
             color: white;
@@ -57,6 +59,17 @@ section.contact {
             border-radius: 8px;
             cursor: pointer;
         }
+		
+			input[type="submit"]:focus {
+				outline-color: rgba(0,0,0,0);
+			}
+
+		input[type=text]:focus,
+		input[type=email]:focus,
+		textarea:focus {
+			outline-color: $light-base-color;
+			@include transition(all $default-transition ease);
+		}
 
 
 /*=== BEGIN CONTACT MEDIA QUERIES ===*/
@@ -65,7 +78,7 @@ section.contact {
 @media (max-width: 768px) {  
     
 	section.contact .sub-container {
-		//padding: 0 $default-padding/2;
+		
 	}
 	
 	section.contact form {

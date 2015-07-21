@@ -967,6 +967,10 @@ textarea {
 
 input {
   display: inline-block;
+  outline-color: #333333;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 textarea {
@@ -993,13 +997,26 @@ textarea {
 input[type="submit"] {
   max-width: 80px;
   margin: 0 auto;
-  border: 3px solid #fff;
+  border: 3px solid white;
   font-size: 1rem;
   font-family: "Lato", sans-serif !important;
   color: white;
   background: #1cdeb0;
   border-radius: 8px;
   cursor: pointer;
+}
+
+input[type="submit"]:focus {
+  outline-color: transparent;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  outline-color: #1cdeb0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /*=== BEGIN CONTACT MEDIA QUERIES ===*/
