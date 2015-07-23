@@ -143,21 +143,31 @@ nav {
 }
 
 .navbar-brand {
-  color: white !important;
-  background: #333333;
-  transition: all 0.3s ease;
-  background-image: url(logo.svg);
+  background-image: url(/images/logo.svg);
+  background-position: 50% 10px;
+  background-size: 180px;
+  width: 180px;
   background-repeat: no-repeat;
-  display: block;
-  padding-bottom: 40px;
+  display: border-box;
+  margin-top: -3px;
+  padding-top: 15px;
   /* gives a little extra padding to deal with hover effect on the right side of the nav */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 3px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-brand:hover,
 .navbar-brand:visited,
 .navbar-brand:active {
-  background: #333333 !important;
-  /* overrides default bootstrap behavior */
+  border-top: 3px solid #1cdeb0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-default {
@@ -176,16 +186,16 @@ nav {
   /* creates invisible border to remove animation */
   margin-top: -3px;
   /* adjustment to make up for invisible border */
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  transition: all 0.15s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-nav li a:hover {
   border-top: 3px solid #1cdeb0;
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  transition: all 0.15s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-nav li a.bio {
@@ -204,12 +214,14 @@ nav {
   background: url(/images/icons/contact.svg) no-repeat 0% 13px;
 }
 
+/*=== BEGIN NAVBAR MEDIA QUERIES ===*/
+/* Smallest devices (phone, 768px and below) */
 /*===== ABOUT STYLES =====*/
 section.about, footer.about {
   padding-top: 180px;
   margin-top: -27px;
   /* aligns section with navbar */
-  background: url(/images/hero.JPG) #333333;
+  background: url(/images/hero.jpg) #333333;
   background-size: cover;
   background-position: 50% 90%;
   color: white;
@@ -259,7 +271,7 @@ ul.tabs {
 
 ul.tabs li {
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 2px;
   background: rgba(28, 222, 176, 0.8);
   display: inline-block;
@@ -272,9 +284,9 @@ ul.tabs li {
 }
 
 ul.tabs li:hover {
-  -webkit-box-shadow: inset 0px -3px 0px 0px white;
-  -moz-box-shadow: inset 0px -3px 0px 0px white;
-  box-shadow: inset 0px -3px 0px 0px white;
+  -webkit-box-shadow: inset 0px -4px 0px 0px white;
+  -moz-box-shadow: inset 0px -4px 0px 0px white;
+  box-shadow: inset 0px -4px 0px 0px white;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -393,8 +405,17 @@ section.about .tab-content.current a#portfolio-link, footer.about .tab-content.c
   }
 
   section.about h1, footer.about h1 {
-    font-size: 2.75em;
+    font-size: 3em;
+    font-weight: 200;
     max-width: 100%;
+  }
+
+  .tab-content {
+    padding: 30px;
+  }
+
+  ul.tabs {
+    display: none;
   }
 }
 /* Small devices (tablets, 768px to 992px) */
@@ -426,7 +447,7 @@ section.bio:before, footer.bio:before {
   margin: 0 auto;
   margin-bottom: 60px;
   background: #333333;
-  max-width: 8.33333%;
+  max-width: 320px;
   height: 3px;
 }
 
@@ -437,6 +458,45 @@ section.bio img, footer.bio img {
   margin-bottom: 20px;
 }
 
+section.bio a.social, footer.bio a.social {
+  display: inline-block;
+  color: #333333;
+  text-transform: uppercase;
+  padding: 40px 0px 5px 0px;
+  margin: 40px;
+  border-bottom: 1px solid transparent;
+  /* adds invisible border so hover doesn't displace content vertically */
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.bio a.social.twitter, footer.bio a.social.twitter {
+  background: url(/images/icons/twitter.svg) no-repeat 50% 0%;
+  background-size: 30px;
+}
+
+section.bio a.social.behance, footer.bio a.social.behance {
+  background: url(/images/icons/behance.svg) no-repeat 50% 0%;
+  background-size: 35px;
+}
+
+section.bio a.twitter:hover, footer.bio a.twitter:hover,
+section.bio a.behance:hover,
+footer.bio a.behance:hover {
+  border-bottom: 1px solid #333333;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*=== BEGIN BIO MEDIA QUERIES ===*/
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {
+  section.bio a.social, footer.bio a.social {
+    margin: 20px;
+  }
+}
 /*===== PORTFOLIO STYLES =====*/
 section.portfolio, footer.portfolio {
   overflow: hidden;
@@ -555,9 +615,6 @@ section.portfolio, footer.portfolio {
   width: 100%;
   height: 120px;
   background: rgba(28, 222, 176, 0.8);
-  -webkit-box-shadow: inset 0px -3px 0px 0px white;
-  -moz-box-shadow: inset 0px -3px 0px 0px white;
-  box-shadow: inset 0px -3px 0px 0px white;
   padding: 30px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -1150,6 +1207,16 @@ body {
   text-align: center;
 }
 
+::selection {
+  color: white;
+  background-color: #1cdeb0;
+}
+
+::-moz-selection {
+  color: white;
+  background-color: #1cdeb0;
+}
+
 section, footer {
   padding: 60px 0 120px 0;
 }
@@ -1180,13 +1247,17 @@ p {
 
 p a {
   color: #1cdeb0;
+  text-decoration: underline;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-p a:hover {
-  color: #19c79e;
+p a:hover,
+p a:active,
+p a:visited {
+  color: #16b18c;
+  text-decoration: underline;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1245,7 +1316,7 @@ h1 {
   font-family: "Lato", sans-serif;
   color: white;
   line-height: 105%;
-  font-weight: 100;
+  font-weight: 200;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -1290,6 +1361,10 @@ h4 {
 
   p {
     padding: 0 30px;
+  }
+
+  h1 {
+    font-weight: 300 !important;
   }
 }
 /* Small devices (tablets, 768px to 992px) */

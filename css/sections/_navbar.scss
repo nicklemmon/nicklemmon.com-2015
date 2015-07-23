@@ -10,19 +10,26 @@ nav {
 }
 
     .navbar-brand {
-        color: white !important;
-        background: $dark-base-color;
-        transition: all $default-transition ease;
-        background-image: url(logo.svg);
+        background-image: url(/images/logo.svg);
+        background-position: 50% 10px;
+        background-size: 180px;
+        width: 180px;
 	    background-repeat: no-repeat;
-	    display: block;
-		padding-bottom: 40px; /* gives a little extra padding to deal with hover effect on the right side of the nav */
+	    @include display(border-box);
+        margin-top: -3px;
+		padding-top: 15px; /* gives a little extra padding to deal with hover effect on the right side of the nav */
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        border-top: 3px solid rgba(0,0,0,0);
+        @include transition(all $default-transition ease)
     }
 
         .navbar-brand:hover,
         .navbar-brand:visited,
         .navbar-brand:active {
-            background: $dark-base-color !important; /* overrides default bootstrap behavior */
+            border-top: 3px solid $light-base-color;
+            @include transition(all $default-transition ease);
         }
 
     .navbar-default {
@@ -38,12 +45,12 @@ nav {
             color: $dark-text-color !important;
 			border-top: 3px solid rgba(0,0,0,0); /* creates invisible border to remove animation */
 			margin-top: -3px; /* adjustment to make up for invisible border */
-            @include transition(all $default-transition/2 ease)
+            @include transition(all $default-transition ease)
         }
         
             .navbar-nav li a:hover {
 				border-top: 3px solid $light-base-color;
-				@include transition(all $default-transition/2 ease);
+				@include transition(all $default-transition ease);
             }
 
             .navbar-nav li a.bio {
@@ -62,3 +69,14 @@ nav {
                 background: url(/images/icons/contact.svg) no-repeat 0% 13px;
             }
 
+
+/*=== BEGIN NAVBAR MEDIA QUERIES ===*/
+
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {
+    
+    .navbar-brand {
+       
+    }
+    
+}

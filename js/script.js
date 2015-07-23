@@ -38,13 +38,6 @@ $( document ).ready(function() {
                                                 $(this).dequeue();
                                                });  /* ...and remove the class .remove from .work-container */
     });
-	
-	/*===== function to initiate preloader from http://denysonique.github.io/imgPreload/ =====*/
-	$(function(){
-        $('img').imgPreload()
-    });
-	
-	$('img').imgPreload({spinner_src: '/img/loader.gif', fake_delay: 100, animation_duration: 200})
     
     /*===== function for section.skills to 'open' each skills skill and display the <dd> =====*/
     $(".definition").click(function(){

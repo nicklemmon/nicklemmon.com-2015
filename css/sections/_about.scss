@@ -3,7 +3,7 @@
 section.about {
     padding-top: $default-padding*3;
     margin-top: -27px; /* aligns section with navbar */
-    background: url(/images/hero.JPG) $dark-base-color;
+    background: url(/images/hero.jpg) $dark-base-color;
     background-size: cover;
     background-position: 50% 90%;
     color: white;
@@ -36,7 +36,7 @@ section.about {
 
 		ul.tabs li{
 			text-transform: uppercase;
-			font-weight: 200;
+			font-weight: 300;
 			letter-spacing: 2px;
 			background: rgba(28,222,176,.8);
 			display: inline-block;
@@ -47,9 +47,9 @@ section.about {
 		}
 
 			ul.tabs li:hover {
-				-webkit-box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
-				-moz-box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
-				box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
+				-webkit-box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
+				-moz-box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
+				box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
 				@include transition(all $default-transition ease);
 			}
 
@@ -133,16 +133,21 @@ section.about {
     }
 	
 		section.about h1 {
-			font-size: 2.75em;
+			font-size: 3em;
+            font-weight: 200;
 			max-width: 100%;
 		}
 	
 		.about-info {
 
 		}
+    
+        .tab-content {
+            padding: $default-padding/2;
+        }
 	
 			ul.tabs {
-				
+				display: none;
 			}
 	
 }

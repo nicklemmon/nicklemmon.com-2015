@@ -10,7 +10,7 @@ section.bio {
         margin: 0 auto;
 		margin-bottom: $default-padding;
         background: $dark-base-color;
-        max-width: percentage(1/12);
+        max-width: 320px;
         height: 3px;
     }
 
@@ -20,4 +20,41 @@ section.bio {
         max-width: 200px;
         margin-bottom: 20px;
     }
+
+    section.bio a.social {
+        display: inline-block;
+        color: $dark-base-color;
+		text-transform: uppercase;
+		padding: 40px 0px 5px 0px;
+        margin: $default-margin;
+		border-bottom: 1px solid rgba(0,0,0,0); /* adds invisible border so hover doesn't displace content vertically */
+		@include transition(all $default-transition ease);
+    }
+
+    section.bio a.social.twitter {
+        background: url(/images/icons/twitter.svg) no-repeat 50% 0%;
+        background-size: 30px;
+    }
+
+    section.bio a.social.behance {
+        background: url(/images/icons/behance.svg) no-repeat 50% 0%;
+        background-size: 35px;
+    }
+
+        section.bio a.twitter:hover,
+        section.bio a.behance:hover {
+            border-bottom: 1px solid $dark-base-color;
+			@include transition(all $default-transition ease);
+        }
+
+/*=== BEGIN BIO MEDIA QUERIES ===*/
+
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {
+    
+    section.bio a.social {
+        margin: $default-margin/2;
+    }
+    
+}
 
