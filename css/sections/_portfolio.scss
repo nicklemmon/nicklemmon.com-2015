@@ -182,7 +182,7 @@ section.portfolio {
 @media (max-width: 768px) {
     
     section.portfolio {
-        padding: $default-padding/2;
+        padding: 0;
 	}
     
     .work-container {
@@ -210,11 +210,8 @@ section.portfolio {
 	
 	.overlay p {
 		font-size: 1.5rem;
+		max-width: 100%;
 	}
-    
-    .work-focus .return {
-        margin-right: -40px !important; /* centers right arrow on small screens */
-    }
     
 }
 

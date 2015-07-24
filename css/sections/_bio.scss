@@ -26,8 +26,8 @@ section.bio {
         color: $dark-base-color;
 		text-transform: uppercase;
 		padding: 40px 0px 5px 0px;
-        margin: $default-margin;
-		border-bottom: 1px solid rgba(0,0,0,0); /* adds invisible border so hover doesn't displace content vertically */
+        margin: $default-margin/2;
+		border-bottom: 3px solid rgba(0,0,0,0); /* adds invisible border so hover doesn't displace content vertically */
 		@include transition(all $default-transition ease);
     }
 
@@ -43,7 +43,7 @@ section.bio {
 
         section.bio a.twitter:hover,
         section.bio a.behance:hover {
-            border-bottom: 1px solid $dark-base-color;
+            border-bottom: 3px solid $light-base-color;
 			@include transition(all $default-transition ease);
         }
 

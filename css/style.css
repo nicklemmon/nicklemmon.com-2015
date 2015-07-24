@@ -144,8 +144,8 @@ nav {
 
 .navbar-brand {
   background-image: url(/images/logo.svg);
-  background-position: 50% 10px;
-  background-size: 180px;
+  background-position: 50% 15px;
+  background-size: 160px;
   width: 180px;
   background-repeat: no-repeat;
   display: border-box;
@@ -273,7 +273,8 @@ ul.tabs li {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
-  background: rgba(28, 222, 176, 0.8);
+  background: #1cdeb0;
+  opacity: .8;
   display: inline-block;
   padding: 60px;
   cursor: pointer;
@@ -292,23 +293,9 @@ ul.tabs li:hover {
   transition: all 0.3s ease;
 }
 
-ul.tabs li[data-tab="tab-1"] {
-  /*background: url(/images/icons/happy.svg) rgba(28,222,176,.7) no-repeat;
-  background-position: 50% 40px;*/
-}
-
-ul.tabs li[data-tab="tab-2"] {
-  /*background: url(/images/icons/images.svg) rgba(28,222,176,.7) no-repeat;
-  background-position: 50% 40px;*/
-}
-
-ul.tabs li[data-tab="tab-3"] {
-  /*background: url(/images/icons/file-text.svg) rgba(28,222,176,.7) no-repeat;
-  background-position: 50% 40px;*/
-}
-
 ul.tabs li.current {
-  background-color: rgba(28, 222, 176, 0.9);
+  background: #1cdeb0;
+  opacity: .9;
   -webkit-box-shadow: inset 0px -3px 0px 0px white;
   -moz-box-shadow: inset 0px -3px 0px 0px white;
   box-shadow: inset 0px -3px 0px 0px white;
@@ -373,7 +360,7 @@ section.about .tab-content.current a, footer.about .tab-content.current a {
   display: inline-block;
   text-transform: uppercase;
   padding: 40px 0px 5px 0px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 3px solid transparent;
   /* adds invisible border so hover doesn't displace content vertically */
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -381,7 +368,7 @@ section.about .tab-content.current a, footer.about .tab-content.current a {
 }
 
 section.about .tab-content.current a:hover, footer.about .tab-content.current a:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 3px solid white;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -405,13 +392,14 @@ section.about .tab-content.current a#portfolio-link, footer.about .tab-content.c
   }
 
   section.about h1, footer.about h1 {
-    font-size: 3em;
+    font-size: 2.75em;
     font-weight: 200;
     max-width: 100%;
   }
 
   .tab-content {
     padding: 30px;
+    min-height: 260px;
   }
 
   ul.tabs {
@@ -463,8 +451,8 @@ section.bio a.social, footer.bio a.social {
   color: #333333;
   text-transform: uppercase;
   padding: 40px 0px 5px 0px;
-  margin: 40px;
-  border-bottom: 1px solid transparent;
+  margin: 20px;
+  border-bottom: 3px solid transparent;
   /* adds invisible border so hover doesn't displace content vertically */
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -484,7 +472,7 @@ section.bio a.social.behance, footer.bio a.social.behance {
 section.bio a.twitter:hover, footer.bio a.twitter:hover,
 section.bio a.behance:hover,
 footer.bio a.behance:hover {
-  border-bottom: 1px solid #333333;
+  border-bottom: 3px solid #1cdeb0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -790,7 +778,7 @@ section.portfolio, footer.portfolio {
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
   section.portfolio, footer.portfolio {
-    padding: 30px;
+    padding: 0;
   }
 
   .work-container {
@@ -852,11 +840,7 @@ section.portfolio, footer.portfolio {
 
   .overlay p {
     font-size: 1.5rem;
-  }
-
-  .work-focus .return {
-    margin-right: -40px !important;
-    /* centers right arrow on small screens */
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -1037,11 +1021,11 @@ textarea {
 label {
   display: block;
   font-family: "Lato", sans-serif;
-  font-size: 1em;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -1195,7 +1179,6 @@ footer ol li a {
 /* Small devices (tablets, 768px to 992px) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-/*== SASS MIX-INS ==*/
 /*===== GLOBAL STYLES =====*/
 html {
   font-size: 100%;

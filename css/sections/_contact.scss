@@ -34,11 +34,11 @@ section.contact {
         label {
             display: block;
             font-family: $secondary-font-stack;
-			font-size: 1em;
-			font-weight: 300;
+			font-size: 1rem;
+			font-weight: 400;
             color: $dark-text-color;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 3px;
             text-align: center;
             margin-top: 5px;
             margin-bottom: $default-margin/2;
