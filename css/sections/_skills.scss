@@ -21,7 +21,7 @@ section.skills {
             font-family: $secondary-font-stack;
             cursor: pointer;
             border-top: 3px solid white;
-            max-height: 140px;
+            height: 160px;
             overflow: hidden; /* fixes issue where re-sizing text changes the size of the container when clicking on .definition divs */
         }
 
@@ -59,7 +59,7 @@ section.skills {
                 }
 
                     .definition dt#html {
-                        background: url(/images/icons/html5.svg) no-repeat 50% $default-padding*1.1;
+                        background: url(/images/icons/html5.svg) no-repeat center 60px;
                         background-size: 45px;
                     }
 
@@ -92,21 +92,21 @@ section.skills {
 /*===== skills MEDIA QUERIES =====*/
 
 /* Smallest devices (phone, 768px and below) */
-@media (max-width: 768px) {  
-    
+@media (max-width: 768px) {
+
 }
 
-/* Small devices (tablets, 768px to 992px) */ 
+/* Small devices (tablets, 768px to 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
-  
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-    
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-   
+
 }

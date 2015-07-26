@@ -913,7 +913,7 @@ section.skills p, footer.skills p {
   font-family: "Lato", sans-serif;
   cursor: pointer;
   border-top: 3px solid white;
-  max-height: 140px;
+  height: 160px;
   overflow: hidden;
   /* fixes issue where re-sizing text changes the size of the container when clicking on .definition divs */
 }
@@ -957,7 +957,7 @@ section.skills p, footer.skills p {
 }
 
 .definition dt#html {
-  background: url(/images/icons/html5.svg) no-repeat 50% 66px;
+  background: url(/images/icons/html5.svg) no-repeat center 60px;
   background-size: 45px;
 }
 
