@@ -488,6 +488,7 @@ footer.bio a.behance:hover {
 /*===== PORTFOLIO STYLES =====*/
 section.portfolio, footer.portfolio {
   overflow: hidden;
+  padding-top: 60px !important;
 }
 
 .work-belt {
@@ -638,6 +639,9 @@ section.portfolio, footer.portfolio {
   /* eliminates vertical space b/t .work-items */
   z-index: -1;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .work-focus {
@@ -1370,5 +1374,12 @@ h4 {
 @media (min-width: 1200px) {
   p {
     max-width: 60%;
+  }
+}
+/*=== PRINT STYLES ===*/
+@media print {
+  * {
+    color: black !important;
+    background: white !important;
   }
 }

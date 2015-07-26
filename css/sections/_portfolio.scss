@@ -2,10 +2,11 @@
 
 section.portfolio {
     overflow: hidden;
+    padding-top: $default-padding !important;
 }
 
     section.portfolio .first.sub-container {
-        
+
     }
 
     .work-belt {
@@ -34,7 +35,7 @@ section.portfolio {
 				position: relative;
 				overflow: hidden;
 			}
-				
+
 				.overlay {
 					@include display(flex);
 					@include align-items(center);
@@ -74,7 +75,7 @@ section.portfolio {
                 margin-bottom: 0px; /* eliminates vertical space b/t .work-items */
 				z-index: -1;
                 cursor: pointer;
-				
+                @include transition(all $default-transition ease);
             }
 
         .work-focus {
@@ -180,15 +181,15 @@ section.portfolio {
 
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
-    
+
     section.portfolio {
         padding: 0;
 	}
-    
+
     .work-container {
         margin-bottom: $default-margin;
     }
-    
+
         .work-container .row {
             @include display(flex);
             @include flex-direction(row);
@@ -197,36 +198,36 @@ section.portfolio {
             @include flex-wrap(wrap);
             max-width: 100% !important;
         }
-	
+
     section.portfolio .sub-container,
     .work-focus {
         max-width: 100% !important;
     }
-    
+
     .work-focus .sub-container {
         padding: 0;
         max-width: 100% !important;
     }
-	
+
 	.overlay p {
 		font-size: 1.5rem;
 		max-width: 100%;
 	}
-    
+
 }
 
 @media (min-width: 768px) { /* layout for 768px and up */
-       
+
 }
 
-/* Small devices (tablets, 768px to 992px) */ 
+/* Small devices (tablets, 768px to 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
-       
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-      
+
     .work-focus {
         margin: 0 auto;
         max-width: 60%;
@@ -234,14 +235,14 @@ section.portfolio {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-       
+@media (min-width: 1200px) {
 
-    
-    
+
+
+
     .work-focus {
         margin: 0 auto;
         max-width: 60%;
     }
-       
-}   
+
+}
