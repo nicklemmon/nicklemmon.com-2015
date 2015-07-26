@@ -10,8 +10,18 @@ $( document ).ready(function() {
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 	});
+	
+	/*===== function to load content in to .work-focus when clicking on each .work-item thumbnail ======*/ 
+	//$.ajaxSetup({ cache: true });
 
-    /*===== functions for section.portfolio to bring in detailed view of each .work-item =====*/
+	$(".work-item-unit").click(function() {
+		var worknum = $(this).attr("data-worknum"); /* declares variable that stores the data for the 'data-worknum' attribute... */
+        //var spinner = '<div class="loader">Loading...</div>';
+        
+		$(".work-focus-content").load("_includes/portfolio/work-focus-" + worknum + ".html"); /* ...which is then used to dynamically load the appropriate content */
+	});
+
+    /*===== function for section.portfolio to bring in detailed view of each .work-item =====*/
     $(".work-item-unit").click(function() { /* when the user clicks on a .work-item... */
         $(".work-focus").removeClass("remove"); /* ...remove the class .remove from .work-focus... */
         $(".work-container").addClass("remove"); /* ...add the class .remove to .work-container... */
@@ -29,16 +39,16 @@ $( document ).ready(function() {
                                                });  /* ...and remove the class .remove from .work-container */
     });
     
-    /*===== functions for section.skills to 'open' each skills skill and display the <dd> =====*/
+    /*===== function for section.skills to 'open' each skills skill and display the <dd> =====*/
     $(".definition").click(function(){
         var dd = $(this).children("dd");
         if (  !(dd.hasClass("show"))  ) { /* if the <dd> element does NOT have a class of .show... */
             dd.addClass("show"); /* ...then add a class of .show... */
-            $(this).children("dt").addClass("pulse"); /* ...and add a class of .pulse to the <dt> element */
+            //$(this).children("dt").addClass("pulse"); /* ...and add a class of .pulse to the <dt> element */
         }
         else { /* if the <dd> element DOES have a class of .show... */
             dd.removeClass("show"); /* ...then remove a class of .show... */
-            $(this).children("dt").removeClass("pulse"); /* ...and remove a class of .pulse */
+            //$(this).children("dt").removeClass("pulse"); /* ...and remove a class of .pulse */
         }
     });
     
@@ -55,6 +65,5 @@ $( document ).ready(function() {
           }
         }
     });
-    
     
 });

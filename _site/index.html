@@ -5,12 +5,16 @@
 
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Quisque sed eros sit amet massa finibus consequat. Fusce efficitur ullamcorper laoreet. Nulla luctus velit sit amet fringilla auctor. Nullam faucibus porttitor mauris, et tempor ex maximus sit amet. Fusce molestie imperdiet commodo. Sed sagittis porttitor libero. Proin et ipsum at leo volutpat sagittis eu sit amet ex. Nulla congue malesuada metus at cursus."> <!-- description meta tag -->
+        <meta name="description" content="The portfolio site for Nick Lemmon, a front-end web designer in Durham, NC specializing in illustration, HTML, and CSS (by way of SASS)."> <!-- description meta tag -->
+        <meta name="author" content="Nick Lemmon, 704.608.1590"> <!-- author meta tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <meta name="robots" content="index, follow">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
         <title>Nick Lemmon - front end web designer and developer in Durham, NC</title>
+        
+        <!-- favicon below -->
+        <link rel="icon" type="image/icon" href="favicon.ico">
 
         <!-- normalize.css -->
         <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
@@ -47,7 +51,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><span>Nick Lemmon</span></a>
+                <a class="navbar-brand" href="/index.html">Nick Lemmon</a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,54 +105,50 @@
             
             <!--===== BEGIN PORTFOLIO =====-->
             <section class="portfolio" id="portfolio">
-                <div class="first sub-container">
-                    <h2>My work</h2>
-                    <p>A sample of some illustrations, websites, and logo designs for small businesses, individuals, and projects.</p>  
-                </div>
                 <div class="sub-container">
+					
+					<h2>My work</h2>
+                    <p>A sample of some illustrations, websites, and logo designs for small businesses, individuals, and projects.</p> 
+							
                     <div class="work-belt">
-
+						
                         <div class="work-container">
                             <div class="row">
-								<a class="work-item-unit" href="#work-focus">
+								<a class="work-item-unit" data-worknum="01">
 									<img src="/images/portfolio/item-01/thumbnail.png" class="work-item" width="100%" height="100%">
 									<div class="overlay"><p>Strength and Sport<p></div>
 								</a>
-                                <a class="work-item-unit" href="#work-focus">
+                                <a class="work-item-unit" data-worknum="02">
 									<img src="/images/portfolio/item-02/thumbnail.png" class="work-item" width="100%" height="100%">
 									<div class="overlay"><p>Rent Otter</p></div>
 								</a>
-                                <a class="work-item-unit" href="#work-focus">
+                                <a class="work-item-unit" data-worknum="03">
 									<img src="/images/portfolio/item-03/thumbnail.png" class="work-item" width="100%" height="100%">
 									<div class="overlay"><p>Big Picture Films</p></div>
 								</a>
                             </div>
                             <div class="row">
-                                <a class="work-item-unit" href="#work-focus">
-									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
-									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+                                <a class="work-item-unit" data-worknum="04">
+									<img src="/images/portfolio/item-04/thumbnail.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>UNC CTI Project</p></div>
 								</a>
-                                <a class="work-item-unit" href="#work-focus">
-									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
-									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+                                <a class="work-item-unit" data-worknum="05">
+									<img src="/images/portfolio/item-05/thumbnail.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Happy budai illustrations</p></div>
 								</a>
-                                <a class="work-item-unit" href="#work-focus">
-									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
-									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+                                <a class="work-item-unit" data-worknum="06">
+									<img src="/images/portfolio/item-06/thumbnail.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>nicklemmon.com - 2014</p></div>
 								</a>
                             </div>
                             <div class="row">
-                                <a class="work-item-unit" href="#work-focus">
-									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
-									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+                                <a class="work-item-unit" data-worknum="07">
+									<img src="/images/portfolio/item-07/thumbnail.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Lily is awesome</p></div>
 								</a>
-                                <a class="work-item-unit" href="#work-focus">
-									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
-									<div class="overlay"><p>Lorem ipsum dolor</p></div>
-								</a>
-                                <a class="work-item-unit" href="#work-focus">
-									<img src="/images/img-placeholder.png" class="work-item" width="100%" height="100%">
-									<div class="overlay"><p>Lorem ipsum dolor</p></div>
+                                <a class="work-item-unit" data-worknum="08">
+									<img src="/images/portfolio/item-08/thumbnail.png" class="work-item" width="100%" height="100%">
+									<div class="overlay"><p>Sketchbook samples</p></div>
 								</a>
                             </div>
                         </div> <!-- end .work-container -->
@@ -156,14 +156,18 @@
                         <div id="work-focus" class="work-focus">
                             
 							<div class="sub-container">
-								<a href="#portfolio" class="return">Return</a>
-								<h3>Lorem ipsum dolor sit amet</h3>
-								<p>Curabitur ornare convallis cursus. Donec sit amet diam eleifend, posuere ipsum vitae, iaculis nisi. Phasellus varius rhoncus felis, sed ultrices nisi feugiat at. Vivamus luctus auctor dolor non euismod. Mauris id tincidunt neque. Mauris pretium quis risus a vehicula. Phasellus a maximus est. Mauris et dapibus lorem.</p>
-								<img src="/images/portfolio/item-01/img-1.png" width="100%" height="100%">
-								<img src="/images/portfolio/item-01/img-2.png" width="100%" height="100%">
-								<img src="/images/portfolio/item-01/img-3.png" width="100%" height="100%">
+								<a class="return">Return</a>
+									<div class="work-focus-content">
+										
+										<h3></h3> <!-- starts empty, then dynamically populated -->
+										<p></p> <!-- starts empty, then dynamically populated -->
+										<img src="/images/portfolio/item-01/img-1.png" width="100%" height="100%">
+										<img src="/images/portfolio/item-01/img-2.png" width="100%" height="100%">
+										<img src="/images/portfolio/item-01/img-3.png" width="100%" height="100%">
 
-								<br> <!-- adds break that fixes .return not clearing images --> 
+										<br> <!-- adds break that fixes .return not clearing images --> 
+										
+									</div> <!-- end .work-focus-container which is used to dynamically load content -->
 								<a href="#portfolio" class="return">Return</a>
 							</div>
 							
@@ -175,6 +179,7 @@
             
             <!--===== BEGIN skills =====-->
             <section class="skills" id="skills">
+                
                 <div class="sub-container">
                     
                     <h2>My skills</h2>
@@ -211,20 +216,7 @@
                 </div>
             </section> <!-- end section.skills -->
 			
-			<!--===== BEGIN BIO =====-->
-            <section class="bio" id="bio">
-                <div class="sub-container">
-                    
-                    <h2>About me</h2>
-                    
-                    <img src="/images/me.jpg" height="100%" width="100%"/>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis, orci eu consequat pulvinar, orci nunc fermentum nunc, vitae faucibus mi risus id orci. Fusce non posuere dolor, efficitur tristique orci. Donec a vehicula arcu. Cras aliquam blandit dignissim.</p>
-                
-                </div>
-            </section> <!-- end section.bio -->
-            
-            <!--===== BEGIN CONTACT =====-->
+			<!--===== BEGIN CONTACT =====-->
             <section class="contact" id="contact">
                 <div class="sub-container">
                     
@@ -232,10 +224,10 @@
                     
                     <p>If you have work, or have questions about my portfolio, I'm happy to chat. Send me a message and we'll go from there.</p>
                     
-                    <form>
-                        <input name="first-name" placeholder="first name" required>
+                    <form action="http://formspree.io/nick.lemmon@gmail.com" method="post">
+                        <input type="text" name="first-name" placeholder="first name" required>
                         <label for="first-name">First name</label>
-                        <input name="last-name" placeholder="last name">
+                        <input type="text" name="last-name" placeholder="last name">
                         <label for="last-name">Last name</label>
                         <input type="email" placeholder="email address" required>
                         <label for="email">E-mail address</label>
@@ -245,8 +237,24 @@
                     </form>
                 
                 </div>
-            </section> <!-- end section.contact -->   
-            
+            </section> <!-- end section.contact -->  
+			
+			<!--===== BEGIN BIO =====-->
+            <section class="bio" id="bio">
+                <div class="sub-container">
+                    
+                    <h2>About me</h2>
+                    
+                    <img src="/images/me.jpg" height="100%" width="100%"/>
+                    
+                    <p>I'm a lifelong illustrator, doodler, and thinker with a passion for the web and new technology. Proud alumnus of the <a href="http://unc.edu">University of North Carolina</a>, currently residing in Durham. In case you didn't know, I also have an <a href="http://nicklemmon.com/lily">awesome dog</a>.</p>
+                    
+                    <a class="social twitter" href="http://twitter.com/nicklemmon">Twitter</a>
+                    <a class="social behance" href="http://behance.net/nicklemmon">Behance</a>
+                
+                </div>
+            </section> <!-- end section.bio -->
+  
 		</div> <!-- end .content -->
         
         <!--========== BEGIN FOOTER ==========-->
@@ -254,10 +262,10 @@
             
             <ol>
                 <li><a href="#about">About the site</a></li>
-                <li><a href="#bio">About me</a></li>
                 <li><a href="#portfolio">My work</a></li>
                 <li><a href="#skills">My skills</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#bio">About me</a></li>
             </ol>
             
             <p>All rights reserved, <a href="/index.html">Nick Lemmon</a> 2015</p>
@@ -266,7 +274,7 @@
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <!-- include all compiled plugins (below), or include individual files as needed -->
 	    <script src="/js/bootstrap.min.js"></script>
 	    <!-- custom scripts -->
 	    <script src="/js/script.js"></script>

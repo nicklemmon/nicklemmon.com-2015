@@ -3,14 +3,14 @@
 section.about {
     padding-top: $default-padding*3;
     margin-top: -27px; /* aligns section with navbar */
-    background: url(/images/hero.jpg) $dark-base-color;
+    background: url(/images/hero.JPG) $dark-base-color;
     background-size: cover;
     background-position: 50% 90%;
     color: white;
 }
 
     section.about .sub-container {
-        
+
     }
 
 	.about-info {
@@ -23,7 +23,7 @@ section.about {
 		section.about h1 {
 			margin-bottom: 0px !important;
 		}
-		
+
 		ul.tabs{
 			@include display(flex);
 			@include flex-direction(row);
@@ -98,7 +98,7 @@ section.about {
 			border-bottom: 3px solid white;
 			@include transition(all $default-transition ease);
 		}
-		
+
 		section.about .tab-content.current a#skills-link {
 			background: url(/images/icons/resume-white.svg) no-repeat 50% 7px;
 			background-size: 25px;
@@ -108,42 +108,42 @@ section.about {
 			background: url(/images/icons/portfolio-white.svg) no-repeat 50% 0%;
 			background-size: 30px;
 		}
-	
+
 
 /*=== BEGIN ABOUT MEDIA QUERIES ===*/
 
 /* Smallest devices (phone, 768px and below) */
-@media (max-width: 768px) {  
-	
+@media (max-width: 768px) {
+
   	section.about {
         padding-top: $default-padding;
     }
-	
+
 		section.about h1 {
 			font-size: 2.75em;
             font-weight: 200;
 			max-width: 100%;
 		}
-	
+
 		.about-info {
 
 		}
-    
+
         .tab-content {
             padding: $default-padding/2;
             min-height: 260px;
         }
-	
+
 			ul.tabs {
 				display: none;
 			}
-	
+
 }
 
-/* Small devices (tablets, 768px to 992px) */ 
+/* Small devices (tablets, 768px to 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
-  
-    
+
+
     section.about {
         padding-top: $default-padding*3;
     }
@@ -151,23 +151,23 @@ section.about {
         section.about h1 {
             max-width: 70%;
         }
-    
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-    
+
     section.about h1 {
         max-width: 70%;
     }
-    
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+
     section.about h1 {
         max-width: 80%;
     }
-    
+
 }

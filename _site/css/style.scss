@@ -1,0 +1,220 @@
+/* importing Bourbon */
+@import 'bourbon/bourbon';
+/* importing Bourbon Neat */
+@import 'neat/neat';
+/* importing misc. variables */
+@import 'vars/_vars';
+/* importing color variables */
+@import 'vars/_colors';
+/* importing css animations */
+@import 'vars/_animations';
+/* importing sections index */
+@import 'sections/-sections-index';
+    
+/*===== GLOBAL STYLES =====*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: $primary-font-stack;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+::selection {
+    color: white;
+    background-color: $light-base-color;
+}
+
+::-moz-selection{
+    color: white;
+    background-color: $light-base-color;
+}
+
+section {
+    padding: $default-padding 0 $default-padding*2 0;
+}
+
+.sub-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 $default-padding/2;
+}
+
+a {
+    
+}
+
+    a:hover,
+	a:visited,
+	a:active {
+        text-decoration: none;
+		color: white;
+    }
+
+p {
+    font-size: 1em;
+    line-height: 160%;
+    margin: 0 auto; /* centering */
+    color: $light-text-color;
+    margin-top: $default-margin/2;
+    margin-bottom: $default-margin;
+}
+
+	p a {
+		color: $light-base-color;
+        text-decoration: underline;
+		@include transition(all $default-transition ease);
+	}
+
+		p a:hover,
+        p a:active,
+        p a:visited {
+			color: darken($light-base-color, 10%);
+            text-decoration: underline;
+			@include transition(all $default-transition ease);
+		}
+
+img {
+    margin-bottom: $default-margin;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: $secondary-font-stack;
+    color: white;
+	background: $light-base-color;
+	margin: $default-margin/2 0 $default-margin/2 0;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all $default-transition ease;
+}
+
+    .btn:hover,
+	.btn:focus {
+        color: white;
+		background: darken($light-base-color, 5%);
+        transition: all $default-transition ease;
+    }
+
+    .btn.call-to-action {
+        background: rgba(0,0,0,0);
+		width: 200px;
+		padding: 15px;
+		border: 3px solid #fff;
+		outline: none;
+		text-transform: uppercase;
+    }
+
+        .btn.call-to-action:hover,
+		.btn.call-to-action:focus {
+            background: rgba(0,0,0,.3);
+            
+        }
+
+    .btn.regular {
+        background: $reg-button-color;
+    }
+
+        .btn.regular:hover,
+		.btn.regular:focus {
+            background: darken($reg-button-color, 5%);
+        }
+
+/*===== HEADER HIERARCHY =====*/
+
+h1 {
+    font-size: 3.75rem;
+    font-family: $secondary-font-stack;
+    color: white;
+    line-height: 105%;
+    font-weight: 200;
+    margin: 0 auto;
+    margin-bottom: $default-margin;
+}
+
+h2 {
+    font-size: 1rem;  
+    font-family: $secondary-font-stack;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: $default-margin/1.25;
+}
+
+h3 {
+    font-size: 1.2rem;
+	max-width: 300px;
+    font-family: $secondary-font-stack;
+    font-weight: 300;
+    text-transform: uppercase;
+	margin: 0 auto;
+    margin-bottom: $default-padding/4;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: $default-margin/4;
+}
+
+/*=== BEGIN GLOBAL MEDIA QUERIES ===*/
+
+/* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {  
+    
+    html {
+        font-size: 80%;
+    }
+	
+	.sub-container {
+		padding: 0;
+	}
+	
+	p {
+		padding: 0 $default-padding/2;
+	}
+    
+    h1 {
+        font-weight: 300 !important;
+    }
+    
+}
+
+/* Small devices (tablets, 768px to 992px) */ 
+@media (min-width: 768px) and (max-width: 992px) {
+  
+    html {
+        font-size: 90%;
+    }
+    
+    p {
+        max-width: 60%;
+    }
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    p {
+        max-width: 50%;
+    }
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+    p {
+        max-width: 60%;
+    }
+    
+}
