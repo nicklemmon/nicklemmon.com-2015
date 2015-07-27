@@ -214,7 +214,7 @@ section.about, footer.about {
   padding-top: 180px;
   margin-top: -27px;
   /* aligns section with navbar */
-  background: url(/images/hero.JPG) #333333;
+  background: url(/images/hero.jpg) #333333;
   background-size: cover;
   background-position: 50% 90%;
   color: white;
@@ -266,8 +266,7 @@ ul.tabs li {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
-  background: #11bbdd;
-  opacity: .8;
+  background: rgba(17, 187, 221, 0.8);
   display: inline-block;
   padding: 60px;
   cursor: pointer;
@@ -287,8 +286,7 @@ ul.tabs li:hover {
 }
 
 ul.tabs li.current {
-  background: #11bbdd;
-  opacity: .9;
+  background: rgba(17, 187, 221, 0.9);
   -webkit-box-shadow: inset 0px -3px 0px 0px white;
   -moz-box-shadow: inset 0px -3px 0px 0px white;
   box-shadow: inset 0px -3px 0px 0px white;
@@ -337,8 +335,7 @@ ul.tabs li.current {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
-  background-color: #11bbdd;
-  opacity: .9;
+  background: rgba(17, 187, 221, 0.9);
 }
 
 section.about p, footer.about p,
@@ -435,7 +432,7 @@ section.bio:before, footer.bio:before {
 
 section.bio img, footer.bio img {
   border-radius: 50%;
-  border: 8px solid #e0e0e0;
+  border: 4px solid #11bbdd;
   max-width: 200px;
   margin-bottom: 20px;
 }
@@ -600,8 +597,7 @@ section.portfolio, footer.portfolio {
   bottom: -100%;
   width: 100%;
   height: 120px;
-  background: black;
-  opacity: .7;
+  background: rgba(0, 0, 0, 0.7);
   padding: 30px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -950,7 +946,6 @@ section.skills p, footer.skills p {
 }
 
 .definition:hover {
-  text-shadow: 3px 0px black !important;
   background-color: #262626 !important;
   transition: all 0.3s ease;
 }
@@ -1156,7 +1151,7 @@ footer a {
 
 footer ol li a:hover {
   color: white;
-  background: #1a1a1a;
+  background: #262626;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
   transition: all 0.6s ease;

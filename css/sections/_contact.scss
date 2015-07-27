@@ -23,8 +23,8 @@ section.contact {
 
         input {
             @include display(inline-block);
-			outline-color: $dark-text-color;
-			@include transition(all $default-transition ease);
+      			outline-color: $dark-text-color;
+      			@include transition(all $default-transition ease);
         }
 
         textarea {

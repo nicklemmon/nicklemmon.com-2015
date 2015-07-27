@@ -14,14 +14,14 @@ footer {
 
     footer a {
         color: white;
-		background: rgba(0,0,0,0);
+        background: rgba(0,0,0,0);
         @include transition(all $default-transition ease);
     }
 
         footer ol li a:hover {
             color: white;
-            background: darken($dark-base-color, 10%);
-             @include transition(all $default-transition*2 ease);
+            background: darken($dark-base-color, 5%);
+            @include transition(all $default-transition*2 ease);
         }
 
     footer ol {
@@ -41,21 +41,21 @@ footer {
 /*===== FOOTER MEDIA QUERIES =====*/
 
 /* Smallest devices (phone, 768px and below) */
-@media (max-width: 768px) {  
-    
+@media (max-width: 768px) {
+
 }
 
-/* Small devices (tablets, 768px to 992px) */ 
+/* Small devices (tablets, 768px to 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
-  
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-    
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-   
+
 }

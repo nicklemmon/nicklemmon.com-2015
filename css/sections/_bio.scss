@@ -1,14 +1,14 @@
 /*===== BIO STYLES =====*/
 
 section.bio {
-    
+
 }
 
 	section.bio:before {
         content: "";
         display: block;
         margin: 0 auto;
-		margin-bottom: $default-padding;
+	      margin-bottom: $default-padding;
         background: $dark-base-color;
         max-width: 320px;
         height: 3px;
@@ -16,7 +16,7 @@ section.bio {
 
     section.bio img {
         border-radius: 50%;
-        border: 8px solid lighten($light-text-color,40%);
+        border: 4px solid $light-base-color;
         max-width: 200px;
         margin-bottom: 20px;
     }
@@ -24,11 +24,11 @@ section.bio {
     section.bio a.social {
         display: inline-block;
         color: $dark-base-color;
-		text-transform: uppercase;
-		padding: 40px 0px 5px 0px;
+    		text-transform: uppercase;
+    		padding: 40px 0px 5px 0px;
         margin: $default-margin/2;
-		border-bottom: 3px solid rgba(0,0,0,0); /* adds invisible border so hover doesn't displace content vertically */
-		@include transition(all $default-transition ease);
+    		border-bottom: 3px solid rgba(0,0,0,0); /* adds invisible border so hover doesn't displace content vertically */
+    		@include transition(all $default-transition ease);
     }
 
     section.bio a.social.twitter {
@@ -44,17 +44,16 @@ section.bio {
         section.bio a.twitter:hover,
         section.bio a.behance:hover {
             border-bottom: 3px solid $light-base-color;
-			@include transition(all $default-transition ease);
+            @include transition(all $default-transition ease);
         }
 
 /*=== BEGIN BIO MEDIA QUERIES ===*/
 
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
-    
+
     section.bio a.social {
         margin: $default-margin/2;
     }
-    
-}
 
+}

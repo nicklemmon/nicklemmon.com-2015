@@ -6,7 +6,7 @@ nav {
     text-transform: uppercase;
     font-size: 1rem;
     padding-top: 5px;
-	overflow-y: hidden;
+    overflow-y: hidden;
 }
 
     .navbar-brand {
@@ -14,10 +14,10 @@ nav {
         background-position: 50% 15px;
         background-size: 160px;
         width: 180px;
-	    background-repeat: no-repeat;
-	    @include display(border-box);
+  	    background-repeat: no-repeat;
+  	    @include display(border-box);
         margin-top: -3px;
-		padding-top: 15px; /* gives a little extra padding to deal with hover effect on the right side of the nav */
+    		padding-top: 15px; /* gives a little extra padding to deal with hover effect on the right side of the nav */
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
@@ -38,19 +38,19 @@ nav {
     }
 
         .navbar-nav li a {
-			@include display(border-box);
+            @include display(border-box);
             padding-left: 30px;
             margin-left: 20px;
             background-size: 20px !important;
             color: $dark-text-color !important;
-			border-top: 3px solid rgba(0,0,0,0); /* creates invisible border to remove animation */
-			margin-top: -3px; /* adjustment to make up for invisible border */
+      			border-top: 3px solid rgba(0,0,0,0); /* creates invisible border to remove animation */
+      			margin-top: -3px; /* adjustment to make up for invisible border */
             @include transition(all $default-transition ease)
         }
-        
+
             .navbar-nav li a:hover {
-				border-top: 3px solid $light-base-color;
-				@include transition(all $default-transition ease);
+      				border-top: 3px solid $light-base-color;
+      				@include transition(all $default-transition ease);
             }
 
             .navbar-nav li a.bio {
@@ -74,9 +74,9 @@ nav {
 
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
-    
+
     .navbar-brand {
-       
+
     }
-    
+
 }

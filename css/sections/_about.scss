@@ -3,7 +3,7 @@
 section.about {
     padding-top: $default-padding*3;
     margin-top: -27px; /* aligns section with navbar */
-    background: url(/images/hero.JPG) $dark-base-color;
+    background: url(/images/hero.jpg) $dark-base-color;
     background-size: cover;
     background-position: 50% 90%;
     color: white;
@@ -15,8 +15,8 @@ section.about {
 
 	.about-info {
 		display: inline-block;
-        min-width: 100%; /* prevents width re-sizing based on content */
-        max-width: 100%;
+    min-width: 100%; /* prevents width re-sizing based on content */
+    max-width: 100%;
 		margin-bottom: $default-margin*2;
 	}
 
@@ -38,8 +38,7 @@ section.about {
 			text-transform: uppercase;
 			font-weight: 300;
 			letter-spacing: 2px;
-			background: $light-base-color;
-			opacity: .8;
+			background: rgba($light-base-color, .8);
 			display: inline-block;
 			padding: $default-padding;
 			cursor: pointer;
@@ -55,8 +54,7 @@ section.about {
 			}
 
 		ul.tabs li.current{
-			background: $light-base-color;
-			opacity: .9;
+			background: rgba($light-base-color, .9);
 			-webkit-box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
 			-moz-box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
 			box-shadow: inset 0px -3px 0px 0px rgba(255,255,255,1);
@@ -75,16 +73,15 @@ section.about {
 			@include align-items(center);
 			@include justify-content(center);
 			@include flex-direction(column);
-			background-color: $light-base-color;
-      opacity: .9;
+			background: rgba($light-base-color, .9);
 		}
 
     section.about p,
-	section.about .tab-content.current a {
+    section.about .tab-content.current a {
         color: white;
         font-weight: 300;
         font-size: 1.3rem;
-		max-width: 80%;
+	      max-width: 80%;
     }
 
 	section.about .tab-content.current a {
@@ -122,7 +119,7 @@ section.about {
 
 		section.about h1 {
 			font-size: 2.75em;
-            font-weight: 200;
+      font-weight: 200;
 			max-width: 100%;
 		}
 
