@@ -118,12 +118,12 @@ img {
         }
 
     .btn.regular {
-        background: $reg-button-color;
+        background: $light-base-color;
     }
 
         .btn.regular:hover,
 		.btn.regular:focus {
-            background: darken($reg-button-color, 5%);
+            background: darken($light-base-color, 5%);
         }
 
 /*===== HEADER HIERARCHY =====*/

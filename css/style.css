@@ -1,11 +1,4 @@
 /* importing Bourbon */
-/* importing Bourbon Neat */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /* importing misc. variables */
 /*== MISC VARIABLES ==*/
 /*== ANIMATION VARIABLES ==*/
@@ -164,7 +157,7 @@ nav {
 .navbar-brand:hover,
 .navbar-brand:visited,
 .navbar-brand:active {
-  border-top: 3px solid #1cdeb0;
+  border-top: 3px solid #11bbdd;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -192,7 +185,7 @@ nav {
 }
 
 .navbar-nav li a:hover {
-  border-top: 3px solid #1cdeb0;
+  border-top: 3px solid #11bbdd;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -273,7 +266,7 @@ ul.tabs li {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
-  background: #1cdeb0;
+  background: #11bbdd;
   opacity: .8;
   display: inline-block;
   padding: 60px;
@@ -294,7 +287,7 @@ ul.tabs li:hover {
 }
 
 ul.tabs li.current {
-  background: #1cdeb0;
+  background: #11bbdd;
   opacity: .9;
   -webkit-box-shadow: inset 0px -3px 0px 0px white;
   -moz-box-shadow: inset 0px -3px 0px 0px white;
@@ -344,7 +337,8 @@ ul.tabs li.current {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
-  background-color: rgba(28, 222, 176, 0.9);
+  background-color: #11bbdd;
+  opacity: .9;
 }
 
 section.about p, footer.about p,
@@ -472,7 +466,7 @@ section.bio a.social.behance, footer.bio a.social.behance {
 section.bio a.twitter:hover, footer.bio a.twitter:hover,
 section.bio a.behance:hover,
 footer.bio a.behance:hover {
-  border-bottom: 3px solid #1cdeb0;
+  border-bottom: 3px solid #11bbdd;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -538,6 +532,9 @@ section.portfolio, footer.portfolio {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .work-container .row {
@@ -603,7 +600,8 @@ section.portfolio, footer.portfolio {
   bottom: -100%;
   width: 100%;
   height: 120px;
-  background: rgba(28, 222, 176, 0.8);
+  background: black;
+  opacity: .7;
   padding: 30px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -628,7 +626,8 @@ section.portfolio, footer.portfolio {
 
 .work-item-unit:focus .overlay {
   bottom: 0;
-  background: #1cdeb0;
+  background: #11bbdd;
+  opacity: 1;
   -webkit-transition: all 0.15s ease;
   -moz-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -708,14 +707,14 @@ section.portfolio, footer.portfolio {
   width: 60px;
   background: url(/images/icons/arrow-left.svg) 50% 50% no-repeat;
   cursor: pointer;
-  border-bottom: 1px solid transparent;
+  border-bottom: 3px solid transparent;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .work-focus .return:hover {
-  border-bottom: 1px solid #333333;
+  border-bottom: 3px solid #333333;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -766,7 +765,7 @@ section.portfolio, footer.portfolio {
 }
 
 .work-focus p a:hover {
-  color: #19c79e;
+  color: #0fa7c5;
 }
 
 .work-focus img {
@@ -1001,7 +1000,7 @@ section.contact form, footer.contact form {
   display: border-box;
   padding: 60px;
   background: white;
-  border: 3px solid #1cdeb0;
+  border: 3px solid #11bbdd;
 }
 
 input,
@@ -1046,7 +1045,7 @@ input[type="submit"] {
   font-size: 1rem;
   font-family: "Lato", sans-serif !important;
   color: white;
-  background: #1cdeb0;
+  background: #11bbdd;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -1058,7 +1057,7 @@ input[type="submit"]:focus {
 input[type=text]:focus,
 input[type=email]:focus,
 textarea:focus {
-  outline-color: #1cdeb0;
+  outline-color: #11bbdd;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1074,7 +1073,7 @@ textarea:focus {
 .loader,
 .loader:before,
 .loader:after {
-  background: #1cdeb0;
+  background: #11bbdd;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
@@ -1196,12 +1195,12 @@ body {
 
 ::selection {
   color: white;
-  background-color: #1cdeb0;
+  background-color: #11bbdd;
 }
 
 ::-moz-selection {
   color: white;
-  background-color: #1cdeb0;
+  background-color: #11bbdd;
 }
 
 section, footer {
@@ -1233,7 +1232,7 @@ p {
 }
 
 p a {
-  color: #1cdeb0;
+  color: #11bbdd;
   text-decoration: underline;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1243,7 +1242,7 @@ p a {
 p a:hover,
 p a:active,
 p a:visited {
-  color: #16b18c;
+  color: #0d93ae;
   text-decoration: underline;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1259,7 +1258,7 @@ img {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   color: white;
-  background: #1cdeb0;
+  background: #11bbdd;
   margin: 20px 0 20px 0;
   padding: 10px 30px;
   border-radius: 8px;
@@ -1270,7 +1269,7 @@ img {
 .btn:hover,
 .btn:focus {
   color: white;
-  background: #19c79e;
+  background: #0fa7c5;
   transition: all 0.3s ease;
 }
 
@@ -1289,12 +1288,12 @@ img {
 }
 
 .btn.regular {
-  background: #1cdeb0;
+  background: #11bbdd;
 }
 
 .btn.regular:hover,
 .btn.regular:focus {
-  background: #19c79e;
+  background: #0fa7c5;
 }
 
 /*===== HEADER HIERARCHY =====*/
