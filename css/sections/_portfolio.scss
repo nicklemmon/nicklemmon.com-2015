@@ -127,7 +127,7 @@ section.portfolio {
 				color: white;
 				padding: $default-padding/4 $default-padding/2;
 				color: white;
-				max-width: 900px;
+				max-width: 100%;
 				margin: 0 auto;
 			}
 
@@ -195,7 +195,7 @@ section.portfolio {
         .work-container .row {
             @include display(flex);
             @include flex-direction(row);
-			@include justify-content(center);
+	          @include justify-content(center);
             @include align-items(center);
             @include flex-wrap(wrap);
             max-width: 100% !important;

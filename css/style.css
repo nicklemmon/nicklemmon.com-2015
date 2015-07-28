@@ -721,7 +721,7 @@ section.portfolio, footer.portfolio {
   color: white;
   padding: 15px 30px;
   color: white;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
 }
 

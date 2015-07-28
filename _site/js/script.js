@@ -8,7 +8,7 @@ $( document ).ready(function() {
 			$('.tab-content').removeClass('current');
 
 			$(this).addClass('current');
-			$("#"+tab_id).addClass('current');
+			$("#" + tab_id).addClass('current');
 		});
 
 		/*===== image preloading for icons in the section.about tabs =====*/
@@ -17,8 +17,6 @@ $( document ).ready(function() {
 	        $('<img/>')[0].src = this;
 	    });
 		}
-
-		// Usage:
 
 		$(['/images/icons/portfolio-white.svg','/images/icons/resume-white.svg']).preload();
 

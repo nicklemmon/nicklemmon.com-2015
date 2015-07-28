@@ -1,7 +1,5 @@
 /* importing Bourbon */
 @import 'bourbon/bourbon';
-/* importing Bourbon Neat */
-@import 'neat/neat';
 /* importing misc. variables */
 @import 'vars/_vars';
 /* importing color variables */
@@ -66,15 +64,15 @@ p {
 
 	p a {
 		color: $light-base-color;
-        text-decoration: underline;
+    text-decoration: underline;
 		@include transition(all $default-transition ease);
 	}
 
 		p a:hover,
-        p a:active,
-        p a:visited {
+    p a:active,
+    p a:visited {
 			color: darken($light-base-color, 10%);
-            text-decoration: underline;
+      text-decoration: underline;
 			@include transition(all $default-transition ease);
 		}
 
@@ -87,8 +85,8 @@ img {
     font-size: 1rem;
     font-family: $secondary-font-stack;
     color: white;
-	background: $light-base-color;
-	margin: $default-margin/2 0 $default-margin/2 0;
+  	background: $light-base-color;
+  	margin: $default-margin/2 0 $default-margin/2 0;
     padding: 10px 30px;
     border-radius: 8px;
     cursor: pointer;
@@ -96,23 +94,23 @@ img {
 }
 
     .btn:hover,
-	.btn:focus {
+    .btn:focus {
         color: white;
-		background: darken($light-base-color, 5%);
+	      background: darken($light-base-color, 5%);
         transition: all $default-transition ease;
     }
 
     .btn.call-to-action {
         background: rgba(0,0,0,0);
-		width: 200px;
-		padding: 15px;
-		border: 3px solid #fff;
-		outline: none;
-		text-transform: uppercase;
+    		width: 200px;
+    		padding: 15px;
+    		border: 3px solid #fff;
+    		outline: none;
+    		text-transform: uppercase;
     }
 
-        .btn.call-to-action:hover,
-		.btn.call-to-action:focus {
+    .btn.call-to-action:hover,
+    .btn.call-to-action:focus {
             background: rgba(0,0,0,.3);
 
         }
