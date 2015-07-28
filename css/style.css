@@ -478,7 +478,6 @@ footer.bio a.behance:hover {
 }
 /*===== PORTFOLIO STYLES =====*/
 section.portfolio, footer.portfolio {
-  overflow: hidden;
   padding-top: 60px !important;
 }
 
@@ -558,6 +557,17 @@ section.portfolio, footer.portfolio {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .work-item-unit {
@@ -827,14 +837,8 @@ section.portfolio, footer.portfolio {
     max-width: 100% !important;
   }
 
-  section.portfolio .sub-container, footer.portfolio .sub-container,
-  .work-focus {
-    max-width: 100% !important;
-  }
-
   .work-focus .sub-container {
     padding: 0;
-    max-width: 100% !important;
   }
 
   .overlay p {
@@ -846,6 +850,11 @@ section.portfolio, footer.portfolio {
   /* layout for 768px and up */
 }
 /* Small devices (tablets, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .work-container {
+    margin: 0 auto;
+  }
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
   .work-focus {

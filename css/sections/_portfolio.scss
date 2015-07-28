@@ -1,7 +1,7 @@
 /*===== PORTFOLIO STYLES =====*/
 
 section.portfolio {
-    overflow: hidden;
+    //overflow: hidden;
     padding-top: $default-padding !important;
 }
 
@@ -30,6 +30,9 @@ section.portfolio {
                 @include display(flex);
                 @include flex-direction(row);
                 @include align-items(center);
+                @include justify-content(center);
+                max-width: 100%;
+                margin: 0 auto;
             }
 
 			.work-item-unit {
@@ -75,7 +78,7 @@ section.portfolio {
 
             .work-container img.work-item {
                 margin-bottom: 0px; /* eliminates vertical space b/t .work-items */
-				z-index: -1;
+		            z-index: -1;
                 cursor: pointer;
                 @include transition(all $default-transition ease);
             }
@@ -156,10 +159,10 @@ section.portfolio {
 
             .work-focus p {
                 font-size: 1rem;
-				font-weight: 300;
+		            font-weight: 300;
                 line-height: 150%;
-				color: white;
-				margin-bottom: $default-margin/2;
+	              color: white;
+                margin-bottom: $default-margin/2;
             }
 
 				.work-focus p a {
@@ -201,14 +204,8 @@ section.portfolio {
             max-width: 100% !important;
         }
 
-    section.portfolio .sub-container,
-    .work-focus {
-        max-width: 100% !important;
-    }
-
     .work-focus .sub-container {
         padding: 0;
-        max-width: 100% !important;
     }
 
 	.overlay p {
@@ -225,6 +222,9 @@ section.portfolio {
 /* Small devices (tablets, 768px to 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
 
+  .work-container {
+    margin: 0 auto;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
