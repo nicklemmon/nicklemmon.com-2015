@@ -478,6 +478,7 @@ footer.bio a.behance:hover {
 }
 /*===== PORTFOLIO STYLES =====*/
 section.portfolio, footer.portfolio {
+  overflow: hidden;
   padding-top: 60px !important;
 }
 
@@ -489,12 +490,26 @@ section.portfolio, footer.portfolio {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
   width: 200%;
 }
 
 .work-container {
   position: relative;
-  margin: 0 auto;
   max-width: 50%;
   height: 100%;
   opacity: 1;
@@ -653,12 +668,9 @@ section.portfolio, footer.portfolio {
   height: 0;
   opacity: 0;
   /* hides the element so as not to impact height of the entire section */
-  visibility: hidden;
-  max-width: 100%;
-  /* half of 200% is 100% */
-  padding-top: 0;
-  position: relative;
   left: -100%;
+  position: relative;
+  max-width: 50%;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -666,22 +678,16 @@ section.portfolio, footer.portfolio {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .work-focus.slide {
@@ -691,9 +697,9 @@ section.portfolio, footer.portfolio {
   background: white;
   visibility: visible;
   left: -50%;
-  -webkit-transition: left 0.6s ease, opacity 0.6s ease;
-  -moz-transition: left 0.6s ease, opacity 0.6s ease;
-  transition: left 0.6s ease, opacity 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .work-container.remove, .work-focus.remove {
@@ -850,25 +856,8 @@ section.portfolio, footer.portfolio {
   /* layout for 768px and up */
 }
 /* Small devices (tablets, 768px to 992px) */
-@media (min-width: 768px) and (max-width: 992px) {
-  .work-container {
-    margin: 0 auto;
-  }
-}
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
-  .work-focus {
-    margin: 0 auto;
-    max-width: 60%;
-  }
-}
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .work-focus {
-    margin: 0 auto;
-    max-width: 60%;
-  }
-}
 /*===== skills STYLES =====*/
 section.skills, footer.skills {
   background: #333333;
