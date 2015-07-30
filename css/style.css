@@ -668,8 +668,8 @@ section.portfolio, footer.portfolio {
   height: 0;
   opacity: 0;
   /* hides the element so as not to impact height of the entire section */
-  left: -100%;
   position: relative;
+  left: -100%;
   max-width: 50%;
   display: -webkit-box;
   display: -moz-box;
@@ -694,8 +694,6 @@ section.portfolio, footer.portfolio {
   height: 100%;
   opacity: 1;
   /* div is no longer hidden when this class is applied */
-  background: white;
-  visibility: visible;
   left: -50%;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
@@ -705,10 +703,9 @@ section.portfolio, footer.portfolio {
 .work-container.remove, .work-focus.remove {
   height: 0;
   opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  transition: all 0.9s ease;
 }
 
 .work-focus .return {
@@ -840,15 +837,14 @@ section.portfolio, footer.portfolio {
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-width: 100% !important;
   }
 
-  .work-focus .sub-container {
-    padding: 0;
+  .work-focus.slide {
+    left: 0%;
   }
 
   .overlay p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     max-width: 100%;
   }
 }
@@ -1204,7 +1200,6 @@ section, footer {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 30px;
 }
 
 a:hover,
