@@ -13,13 +13,13 @@ section.portfolio {
         @include display(flex);
         @include flex-direction(row);
         @include flex-wrap(wrap);
-        height: 100%;
-        width: 200%;
+        height: 200%;
+        width: 100%;
     }
 
         .work-container {
             position: relative;
-            max-width: 50%;
+            max-width: 100%;
             height: 100%; opacity: 1;
             @include display(flex);
             @include flex-direction(row);
@@ -86,18 +86,20 @@ section.portfolio {
             }
 
         .work-focus {
-            height: 0; opacity: 0; /* hides the element so as not to impact height of the entire section */
+            height: 0;
+            opacity: 0; /* hides the element so as not to impact height of the entire section */
             position: relative;
-            left: -100%;
-            max-width: 50%;
+            //top: 100%;
+            max-width: 100%;
             @include display(flex);
             @include flex-direction(row);
             @include transition(all $default-transition*2 ease);
         }
 
             .work-focus.slide {
-                height: 100%; opacity: 1; /* div is no longer hidden when this class is applied */
-                left: -50%;
+                height: 100%;
+                opacity: 1; /* div is no longer hidden when this class is applied */
+                //top: 0%;
                 @include transition(all $default-transition*2 ease);
             }
 
@@ -202,7 +204,7 @@ section.portfolio {
         }
 
         .work-focus.slide {
-          left: 0%;
+          //left: 0%;
         }
 
 	.overlay p {
