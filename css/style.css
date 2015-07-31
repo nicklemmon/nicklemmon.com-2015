@@ -6,122 +6,58 @@
 /*== SASS COLOR VARIABLES ==*/
 /*== OG COLOR SCHEME ==*/
 /* importing css animations */
-.pulse {
-  -webkit-animation: pulse 1.8s linear 1 both;
-  animation: pulse 1.8s linear 1 both;
+.fade-in, .work-container, .work-focus.slide {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
 }
 
-/* Generated with Bounce.js. Edit at http://goo.gl/JhRkXQ */
-@-webkit-keyframes pulse {
+@-webkit-keyframes fade-in {
   0% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  16.57% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  16.67% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  19.59% {
-    -webkit-transform: matrix3d(1.106, 0, 0, 0, 0, 1.106, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.106, 0, 0, 0, 0, 1.106, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  22.51% {
-    -webkit-transform: matrix3d(1.131, 0, 0, 0, 0, 1.131, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.131, 0, 0, 0, 0, 1.131, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  29.51% {
-    -webkit-transform: matrix3d(1.076, 0, 0, 0, 0, 1.076, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.076, 0, 0, 0, 0, 1.076, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  36.44% {
-    -webkit-transform: matrix3d(1.022, 0, 0, 0, 0, 1.022, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.022, 0, 0, 0, 0, 1.022, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  43.36% {
-    -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.001, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  50.28% {
-    -webkit-transform: matrix3d(0.998, 0, 0, 0, 0, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(0.998, 0, 0, 0, 0, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  78.14% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    opacity: 0;
   }
 
   100% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    opacity: 1;
   }
 }
-@keyframes pulse {
+@keyframes fade-in {
   0% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  16.57% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  16.67% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  19.59% {
-    -webkit-transform: matrix3d(1.106, 0, 0, 0, 0, 1.106, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.106, 0, 0, 0, 0, 1.106, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  22.51% {
-    -webkit-transform: matrix3d(1.131, 0, 0, 0, 0, 1.131, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.131, 0, 0, 0, 0, 1.131, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  29.51% {
-    -webkit-transform: matrix3d(1.076, 0, 0, 0, 0, 1.076, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.076, 0, 0, 0, 0, 1.076, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  36.44% {
-    -webkit-transform: matrix3d(1.022, 0, 0, 0, 0, 1.022, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.022, 0, 0, 0, 0, 1.022, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  43.36% {
-    -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1.001, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  50.28% {
-    -webkit-transform: matrix3d(0.998, 0, 0, 0, 0, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(0.998, 0, 0, 0, 0, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-
-  78.14% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    opacity: 0;
   }
 
   100% {
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    opacity: 1;
+  }
+}
+.fade-out, .work-container.remove, .work-focus.remove {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 /* importing sections index */
@@ -511,7 +447,6 @@ section.portfolio, footer.portfolio {
 .work-container {
   position: relative;
   max-width: 100%;
-  max-height: 100%;
   opacity: 1;
   display: -webkit-box;
   display: -moz-box;
@@ -666,12 +601,11 @@ section.portfolio, footer.portfolio {
 
 .work-focus {
   height: auto;
-  max-height: 0;
+  height: 0;
   opacity: 0;
   /* hides the element so as not to impact height of the entire section */
   position: relative;
   visibility: hidden;
-  max-width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -693,7 +627,6 @@ section.portfolio, footer.portfolio {
 
 .work-focus.slide {
   height: 100%;
-  max-height: 100%;
   visibility: visible;
   opacity: 1;
   /* div is no longer hidden when this class is applied */
@@ -703,12 +636,8 @@ section.portfolio, footer.portfolio {
 }
 
 .work-container.remove, .work-focus.remove {
-  height: auto;
-  max-height: 0;
+  height: 0;
   opacity: 0;
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  transition: all 0.9s ease;
 }
 
 .work-focus .return {
