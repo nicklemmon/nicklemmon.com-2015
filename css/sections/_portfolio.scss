@@ -24,6 +24,7 @@ section.portfolio {
             max-width: 100%;
             //max-height: 100%;
             opacity: 1;
+            height: 100%; opacity: 1;
             @include display(flex);
             @include flex-direction(row);
             @include align-items(center);
@@ -89,11 +90,12 @@ section.portfolio {
             }
 
         .work-focus {
-            height: auto;
-            max-height: 0;
+            height: 0;
             opacity: 0; /* hides the element so as not to impact height of the entire section */
             position: relative;
             visibility: hidden;
+            //top: 100%;
+            max-width: 100%;
             @include display(flex);
             @include flex-direction(column);
             @include align-items(center);
@@ -113,6 +115,15 @@ section.portfolio {
                 max-height: 0;
                 opacity: 0;
                 @include transition(all $default-transition*2 ease);
+                height: 100%;
+                opacity: 1; /* div is no longer hidden when this class is applied */
+                //top: 0%;
+                @include transition(all $default-transition*2 ease);
+            }
+
+            .work-container.remove, .work-focus.remove {
+                height: 0; opacity: 0;
+                @include transition(all $default-transition*3 ease);
             }
 
             .work-focus .return {

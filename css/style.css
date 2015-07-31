@@ -449,6 +449,8 @@ section.portfolio, footer.portfolio {
   position: relative;
   max-width: 100%;
   opacity: 1;
+  height: 100%;
+  opacity: 1;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -601,12 +603,12 @@ section.portfolio, footer.portfolio {
 }
 
 .work-focus {
-  height: auto;
-  max-height: 0;
+  height: 0;
   opacity: 0;
   /* hides the element so as not to impact height of the entire section */
   position: relative;
   visibility: hidden;
+  max-width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -648,6 +650,20 @@ section.portfolio, footer.portfolio {
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  height: 100%;
+  opacity: 1;
+  /* div is no longer hidden when this class is applied */
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.work-container.remove, .work-focus.remove {
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  transition: all 0.9s ease;
 }
 
 .work-focus .return {
