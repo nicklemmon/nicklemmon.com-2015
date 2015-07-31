@@ -62,8 +62,8 @@ section.about {
 
 		.tab-content{
 			display: none;
-			height: 300px;
-			padding: $default-padding $default-padding $default-padding*2 $default-padding;
+			height: 340px;
+			//padding: $default-padding $default-padding $default-padding*2 $default-padding;
 		}
 
 		.tab-content.current{
@@ -132,7 +132,7 @@ section.about {
     }
 
         .tab-content {
-            padding: 5px !important;
+            padding: 10px !important;
             height: 240px;
         }
 

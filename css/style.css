@@ -7,8 +7,8 @@
 /*== OG COLOR SCHEME ==*/
 /* importing css animations */
 .fade-in, .work-container, .work-focus.slide {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fade-in;
@@ -34,8 +34,8 @@
   }
 }
 .fade-out, .work-container.remove, .work-focus.remove {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fade-out;
@@ -85,18 +85,18 @@ nav {
   white-space: nowrap;
   overflow: hidden;
   border-top: 3px solid transparent;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar-brand:hover,
 .navbar-brand:visited,
 .navbar-brand:active {
   border-top: 3px solid #11bbdd;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar-default {
@@ -115,16 +115,16 @@ nav {
   /* creates invisible border to remove animation */
   margin-top: -3px;
   /* adjustment to make up for invisible border */
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar-nav li a:hover {
   border-top: 3px solid #11bbdd;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar-nav li a.bio {
@@ -198,18 +198,18 @@ ul.tabs li {
   padding: 60px;
   cursor: pointer;
   width: 33.33333%;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 ul.tabs li:hover {
   -webkit-box-shadow: inset 0px -4px 0px 0px white;
   -moz-box-shadow: inset 0px -4px 0px 0px white;
   box-shadow: inset 0px -4px 0px 0px white;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 ul.tabs li.current {
@@ -217,15 +217,14 @@ ul.tabs li.current {
   -webkit-box-shadow: inset 0px -3px 0px 0px white;
   -moz-box-shadow: inset 0px -3px 0px 0px white;
   box-shadow: inset 0px -3px 0px 0px white;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .tab-content {
   display: none;
-  height: 300px;
-  padding: 60px 60px 120px 60px;
+  height: 340px;
 }
 
 .tab-content.current {
@@ -280,16 +279,16 @@ section.about .tab-content.current a, footer.about .tab-content.current a {
   padding: 40px 0px 5px 0px;
   border-bottom: 3px solid transparent;
   /* adds invisible border so hover doesn't displace content vertically */
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 section.about .tab-content.current a:hover, footer.about .tab-content.current a:hover {
   border-bottom: 3px solid white;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 section.about .tab-content.current a#skills-link, footer.about .tab-content.current a#skills-link {
@@ -325,7 +324,7 @@ section.about .tab-content.current a#portfolio-link, footer.about .tab-content.c
   }
 
   .tab-content {
-    padding: 5px !important;
+    padding: 10px !important;
     height: 240px;
   }
 
@@ -351,9 +350,9 @@ section.about .tab-content.current a#portfolio-link, footer.about .tab-content.c
     padding: 30px 0 30px 0;
     cursor: pointer;
     width: 100%;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
 }
 /* Small devices (tablets, 768px to 992px) */
@@ -404,9 +403,9 @@ section.bio a.social, footer.bio a.social {
   margin: 20px;
   border-bottom: 3px solid transparent;
   /* adds invisible border so hover doesn't displace content vertically */
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 section.bio a.social.twitter, footer.bio a.social.twitter {
@@ -423,9 +422,9 @@ section.bio a.twitter:hover, footer.bio a.twitter:hover,
 section.bio a.behance:hover,
 footer.bio a.behance:hover {
   border-bottom: 3px solid #11bbdd;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /*=== BEGIN BIO MEDIA QUERIES ===*/
@@ -504,9 +503,9 @@ section.portfolio, footer.portfolio {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .work-container .row {
@@ -586,9 +585,9 @@ section.portfolio, footer.portfolio {
   background: rgba(0, 0, 0, 0.7);
   padding: 30px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .overlay p {
@@ -601,9 +600,9 @@ section.portfolio, footer.portfolio {
 
 .work-item-unit:hover .overlay {
   bottom: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .work-container img.work-item {
@@ -611,9 +610,9 @@ section.portfolio, footer.portfolio {
   /* eliminates vertical space b/t .work-items */
   z-index: -1;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .work-focus {
@@ -623,25 +622,25 @@ section.portfolio, footer.portfolio {
   /* hides the element so as not to impact height of the entire section */
   position: relative;
   visibility: hidden;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .work-focus.slide {
   height: 100%;
   visibility: visible;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .work-container.remove, .work-focus.remove {
   height: 0;
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .work-focus .return {
@@ -653,16 +652,16 @@ section.portfolio, footer.portfolio {
   background: url(/images/icons/arrow-left.svg) 50% 50% no-repeat;
   cursor: pointer;
   border-bottom: 3px solid transparent;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .work-focus .return:hover {
   border-bottom: 3px solid #333333;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .work-focus .work-info {
@@ -855,9 +854,9 @@ section.skills p, footer.skills p {
   opacity: 0;
   height: 0;
   width: 0%;
-  -webkit-transition: height 0.3s ease, width 0.3s ease, visibility 0s ease, opacity 0s ease;
-  -moz-transition: height 0.3s ease, width 0.3s ease, visibility 0s ease, opacity 0s ease;
-  transition: height 0.3s ease, width 0.3s ease, visibility 0s ease, opacity 0s ease;
+  -webkit-transition: height 0.5s ease, width 0.5s ease, visibility 0s ease, opacity 0s ease;
+  -moz-transition: height 0.5s ease, width 0.5s ease, visibility 0s ease, opacity 0s ease;
+  transition: height 0.5s ease, width 0.5s ease, visibility 0s ease, opacity 0s ease;
 }
 
 .definition dd.show {
@@ -866,14 +865,14 @@ section.skills p, footer.skills p {
   height: auto;
   width: 50%;
   opacity: 1;
-  -webkit-transition: height 0.3s ease, width 0.3s ease, visibility 2.4s ease, opacity 2.4s ease;
-  -moz-transition: height 0.3s ease, width 0.3s ease, visibility 2.4s ease, opacity 2.4s ease;
-  transition: height 0.3s ease, width 0.3s ease, visibility 2.4s ease, opacity 2.4s ease;
+  -webkit-transition: height 0.5s ease, width 0.5s ease, visibility 4s ease, opacity 4s ease;
+  -moz-transition: height 0.5s ease, width 0.5s ease, visibility 4s ease, opacity 4s ease;
+  transition: height 0.5s ease, width 0.5s ease, visibility 4s ease, opacity 4s ease;
 }
 
 .definition:hover {
   background-color: #262626 !important;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .definition dt#html {
@@ -908,6 +907,11 @@ section.skills p, footer.skills p {
 
 /*===== skills MEDIA QUERIES =====*/
 /* Smallest devices (phone, 768px and below) */
+@media (max-width: 768px) {
+  .definition dd.show {
+    padding-right: 20px;
+  }
+}
 /* Small devices (tablets, 768px to 992px) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
@@ -933,9 +937,9 @@ textarea {
 input {
   display: inline-block;
   outline-color: #333333;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 textarea {
@@ -979,9 +983,9 @@ input[type=text]:focus,
 input[type=email]:focus,
 textarea:focus {
   outline-color: #11bbdd;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /*=== BEGIN CONTACT MEDIA QUERIES ===*/
@@ -1070,17 +1074,17 @@ footer {
 footer a {
   color: white;
   background: transparent;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 footer ol li a:hover {
   color: white;
   background: #262626;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 footer ol {
@@ -1154,9 +1158,9 @@ p {
 p a {
   color: #11bbdd;
   text-decoration: underline;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 p a:hover,
@@ -1164,9 +1168,9 @@ p a:active,
 p a:visited {
   color: #0d93ae;
   text-decoration: underline;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 img {
@@ -1183,14 +1187,14 @@ img {
   padding: 10px 30px;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .btn:hover,
 .btn:focus {
   color: white;
   background: #0fa7c5;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .btn.call-to-action {

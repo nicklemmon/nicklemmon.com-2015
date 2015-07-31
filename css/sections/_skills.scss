@@ -93,6 +93,10 @@ section.skills {
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
 
+  .definition dd.show {
+      padding-right: 20px;
+  }
+
 }
 
 /* Small devices (tablets, 768px to 992px) */
