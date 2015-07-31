@@ -86,7 +86,7 @@ section.portfolio {
             display: block;
             margin-top: $default-margin;
             background: white;
-            height: 0;
+            max-height: 0;
             position: relative;
             @include transition(all $default-transition ease);
         }
@@ -94,16 +94,21 @@ section.portfolio {
             .work-focus.slide {
                 @extend .fade-in;
                 margin-top: 0;
-                height: 100%;
-                @include transition(all $default-transition ease);
+                max-height: 100%;
+                @include transition(margin-top $default-transition ease);
             }
 
-            .work-container.remove, .work-focus.remove {
+            .work-container.remove {
                 display: block;
                 @extend .fade-out;
-                height: 0;
-                //opacity: 0;
-                //display: none;
+                max-height: 0;
+                @include transition(max-height .1s ease);
+            }
+
+            .work-focus.remove {
+                display: block;
+                @extend .fade-out;
+                max-height: 0;
                 @include transition(all $default-transition ease);
             }
 

@@ -619,7 +619,7 @@ section.portfolio, footer.portfolio {
   display: block;
   margin-top: 40px;
   background: white;
-  height: 0;
+  max-height: 0;
   position: relative;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -628,15 +628,23 @@ section.portfolio, footer.portfolio {
 
 .work-focus.slide {
   margin-top: 0;
-  height: 100%;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  max-height: 100%;
+  -webkit-transition: margin-top 0.5s ease;
+  -moz-transition: margin-top 0.5s ease;
+  transition: margin-top 0.5s ease;
 }
 
-.work-container.remove, .work-focus.remove {
+.work-container.remove {
   display: block;
-  height: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.1s ease;
+  -moz-transition: max-height 0.1s ease;
+  transition: max-height 0.1s ease;
+}
+
+.work-focus.remove {
+  display: block;
+  max-height: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
