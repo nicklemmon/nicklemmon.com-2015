@@ -20,7 +20,7 @@ section.portfolio {
         .work-container {
             position: relative;
             max-width: 100%;
-            height: 100%; opacity: 1;
+            max-height: 100%; opacity: 1;
             @include display(flex);
             @include flex-direction(row);
             @include align-items(center);
@@ -86,9 +86,11 @@ section.portfolio {
             }
 
         .work-focus {
-            height: 0;
+            height: auto;
+            max-height: 0;
             opacity: 0; /* hides the element so as not to impact height of the entire section */
             position: relative;
+            visibility: hidden;
             //top: 100%;
             max-width: 100%;
             @include display(flex);
@@ -98,13 +100,17 @@ section.portfolio {
 
             .work-focus.slide {
                 height: 100%;
+                max-height: 100%;
+                visibility: visible;
                 opacity: 1; /* div is no longer hidden when this class is applied */
                 //top: 0%;
-                @include transition(all $default-transition*2 ease);
+                @include transition(max-height $default-transition*2 ease);
             }
 
             .work-container.remove, .work-focus.remove {
-                height: 0; opacity: 0;
+                height: auto;
+                max-height: 0;
+                opacity: 0;
                 @include transition(all $default-transition*3 ease);
             }
 
