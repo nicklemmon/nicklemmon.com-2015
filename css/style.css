@@ -437,6 +437,7 @@ footer.bio a.behance:hover {
 /*===== PORTFOLIO STYLES =====*/
 section.portfolio, footer.portfolio {
   overflow: hidden;
+  display: block;
   min-height: 1000px;
   padding-top: 60px !important;
 }
@@ -463,7 +464,6 @@ section.portfolio, footer.portfolio {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 200%;
   width: 100%;
 }
 
@@ -617,27 +617,26 @@ section.portfolio, footer.portfolio {
 
 .work-focus {
   display: block;
+  margin-top: 40px;
+  background: white;
   height: 0;
-  opacity: 0;
-  /* hides the element so as not to impact height of the entire section */
   position: relative;
-  visibility: hidden;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .work-focus.slide {
+  margin-top: 0;
   height: 100%;
-  visibility: visible;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .work-container.remove, .work-focus.remove {
+  display: block;
   height: 0;
-  opacity: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;

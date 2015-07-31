@@ -2,6 +2,7 @@
 
 section.portfolio {
     overflow: hidden;
+    display: block;
     min-height: 1000px;
     padding-top: $default-padding !important;
 }
@@ -14,7 +15,6 @@ section.portfolio {
         @include display(flex);
         @include flex-direction(row);
         @include flex-wrap(wrap);
-        height: 200%;
         width: 100%;
     }
 
@@ -84,24 +84,26 @@ section.portfolio {
 
         .work-focus {
             display: block;
+            margin-top: $default-margin;
+            background: white;
             height: 0;
-            opacity: 0; /* hides the element so as not to impact height of the entire section */
             position: relative;
-            visibility: hidden;
             @include transition(all $default-transition ease);
         }
 
             .work-focus.slide {
                 @extend .fade-in;
+                margin-top: 0;
                 height: 100%;
-                visibility: visible;
                 @include transition(all $default-transition ease);
             }
 
             .work-container.remove, .work-focus.remove {
-                //display: block;
+                display: block;
                 @extend .fade-out;
-                height: 0; opacity: 0;
+                height: 0;
+                //opacity: 0;
+                //display: none;
                 @include transition(all $default-transition ease);
             }
 
