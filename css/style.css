@@ -7,8 +7,8 @@
 /*== OG COLOR SCHEME ==*/
 /* importing css animations */
 .fade-in, .work-container, .work-focus.slide {
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fade-in;
@@ -34,8 +34,8 @@
   }
 }
 .fade-out, .work-container.remove, .work-focus.remove {
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fade-out;
@@ -183,15 +183,6 @@ ul.tabs {
   -moz-flex-direction: row;
   flex-direction: row;
   -ms-flex-direction: row;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -233,8 +224,8 @@ ul.tabs li.current {
 
 .tab-content {
   display: none;
-  min-height: 340px;
-  padding: 60px;
+  height: 300px;
+  padding: 60px 60px 120px 60px;
 }
 
 .tab-content.current {
@@ -316,21 +307,53 @@ section.about .tab-content.current a#portfolio-link, footer.about .tab-content.c
 @media (max-width: 768px) {
   section.about, footer.about {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   section.about h1, footer.about h1 {
-    font-size: 2.75em;
-    font-weight: 200;
+    font-size: 2.75rem;
     max-width: 100%;
   }
 
-  .tab-content {
-    padding: 30px;
-    min-height: 260px;
+  .about-info p {
+    font-size: 1.2rem !important;
+    padding: 0 7.5px;
   }
 
-  ul.tabs {
-    display: none;
+  .about-info {
+    margin-bottom: 20px;
+  }
+
+  .tab-content {
+    padding: 5px !important;
+    height: 240px;
+  }
+
+  ul.tabs li {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0px;
+    background: rgba(17, 187, 221, 0.8);
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    padding: 30px 0 30px 0;
+    cursor: pointer;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 }
 /* Small devices (tablets, 768px to 992px) */
@@ -583,15 +606,6 @@ section.portfolio, footer.portfolio {
   transition: all 0.3s ease;
 }
 
-.work-item-unit:focus .overlay {
-  bottom: 0;
-  background: #11bbdd;
-  opacity: 1;
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
 .work-container img.work-item {
   margin-bottom: 0px;
   /* eliminates vertical space b/t .work-items */
@@ -603,67 +617,31 @@ section.portfolio, footer.portfolio {
 }
 
 .work-focus {
+  display: block;
   height: 0;
   opacity: 0;
   /* hides the element so as not to impact height of the entire section */
   position: relative;
   visibility: hidden;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .work-focus.slide {
-  max-height: 100%;
-  visibility: visible;
-  opacity: 1;
-  /* div is no longer hidden when this class is applied */
-}
-
-.work-container.remove, .work-focus.remove {
-  max-height: 0;
-  opacity: 0;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  transition: all 0.6s ease;
   height: 100%;
-  opacity: 1;
-  /* div is no longer hidden when this class is applied */
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .work-container.remove, .work-focus.remove {
   height: 0;
   opacity: 0;
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  transition: all 0.9s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .work-focus .return {
@@ -1289,10 +1267,6 @@ h4 {
 
   p {
     padding: 0 30px;
-  }
-
-  h1 {
-    font-weight: 300 !important;
   }
 }
 /* Small devices (tablets, 768px to 992px) */
