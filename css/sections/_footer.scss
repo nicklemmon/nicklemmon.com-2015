@@ -24,6 +24,10 @@ footer {
             @include transition(all $default-transition*2 ease);
         }
 
+        footer ol li a:focus {
+            color: white;
+        }
+
     footer ol {
         padding: 0; /* fixes issue so that footer content is appropriately centered */
     }

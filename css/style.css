@@ -638,6 +638,7 @@ section.portfolio, footer.portfolio {
 
 .work-container.remove {
   max-height: 0;
+  opacity: 0;
 }
 
 .work-focus.remove {
@@ -726,7 +727,7 @@ section.portfolio, footer.portfolio {
   margin-bottom: 20px;
 }
 
-/*=== BEGIN GLOBAL MEDIA QUERIES ===*/
+/*=== BEGIN PORTFOLIO MEDIA QUERIES ===*/
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
   section.portfolio, footer.portfolio {
@@ -779,17 +780,15 @@ section.portfolio, footer.portfolio {
     flex-wrap: wrap;
   }
 
+  .work-focus.slide {
+    margin-top: -40px;
+  }
+
   .overlay p {
     font-size: 1.2rem;
     max-width: 100%;
   }
 }
-@media (min-width: 768px) {
-  /* layout for 768px and up */
-}
-/* Small devices (tablets, 768px to 992px) */
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
 /*===== skills STYLES =====*/
 section.skills, footer.skills {
   background: #333333;
@@ -870,9 +869,9 @@ section.skills p, footer.skills p {
   height: auto;
   width: 50%;
   opacity: 1;
-  -webkit-transition: height 0.5s ease, width 0.5s ease, visibility 4s ease, opacity 4s ease;
-  -moz-transition: height 0.5s ease, width 0.5s ease, visibility 4s ease, opacity 4s ease;
-  transition: height 0.5s ease, width 0.5s ease, visibility 4s ease, opacity 4s ease;
+  -webkit-transition: height 0.5s ease, width 0.5s ease, visibility 3s ease, opacity 4s ease;
+  -moz-transition: height 0.5s ease, width 0.5s ease, visibility 3s ease, opacity 4s ease;
+  transition: height 0.5s ease, width 0.5s ease, visibility 3s ease, opacity 4s ease;
 }
 
 .definition:hover {
@@ -1090,6 +1089,10 @@ footer ol li a:hover {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+footer ol li a:focus {
+  color: white;
 }
 
 footer ol {

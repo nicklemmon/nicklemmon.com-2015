@@ -22,7 +22,6 @@ section.portfolio {
             @extend .fade-in;
             position: relative;
             max-width: 100%;
-            //max-height: 100%;
             opacity: 1;
             height: 100%; opacity: 1;
             @include display(flex);
@@ -100,6 +99,7 @@ section.portfolio {
 
             .work-container.remove {
                 max-height: 0;
+                opacity: 0;
             }
 
             .work-focus.remove {
@@ -182,7 +182,7 @@ section.portfolio {
 				margin-bottom: $default-margin/2;
 			}
 
-/*=== BEGIN GLOBAL MEDIA QUERIES ===*/
+/*=== BEGIN PORTFOLIO MEDIA QUERIES ===*/
 
 /* Smallest devices (phone, 768px and below) */
 @media (max-width: 768px) {
@@ -205,34 +205,12 @@ section.portfolio {
         }
 
         .work-focus.slide {
-          //left: 0%;
+          margin-top: -$default-margin;
         }
 
 	.overlay p {
 		font-size: 1.2rem;
 		max-width: 100%;
 	}
-
-}
-
-@media (min-width: 768px) { /* layout for 768px and up */
-
-
-
-}
-
-/* Small devices (tablets, 768px to 992px) */
-@media (min-width: 768px) and (max-width: 992px) {
-
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
 
 }

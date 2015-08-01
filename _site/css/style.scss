@@ -39,17 +39,16 @@ section {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 $default-padding/2;
 }
 
 a {
 
 }
 
-    a:hover,
+  a:hover,
 	a:visited,
 	a:active {
-        text-decoration: none;
+    text-decoration: none;
 		color: white;
     }
 
@@ -179,10 +178,6 @@ h4 {
 	p {
 		padding: 0 $default-padding/2;
 	}
-
-    h1 {
-        font-weight: 300 !important;
-    }
 
 }
 
