@@ -33,7 +33,7 @@
     opacity: 1;
   }
 }
-.fade-out, .work-container.remove, .work-focus.remove {
+.fade-out, .work-focus.remove {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
@@ -81,8 +81,10 @@ nav {
   margin-top: -3px;
   padding-top: 15px;
   /* gives a little extra padding to deal with hover effect on the right side of the nav */
-  text-indent: 100%;
+  text-indent: 200%;
+  /* hides text - image replacement technique */
   white-space: nowrap;
+  /* hides text - image replacement technique */
   overflow: hidden;
   border-top: 3px solid transparent;
   -webkit-transition: all 0.5s ease;
@@ -152,7 +154,7 @@ section.about, footer.about {
   /* aligns section with navbar */
   background: url(/images/hero.jpg) #333333;
   background-size: cover;
-  background-position: 50% 90%;
+  background-position: 50% 50%;
   color: white;
 }
 
@@ -635,11 +637,7 @@ section.portfolio, footer.portfolio {
 }
 
 .work-container.remove {
-  display: block;
   max-height: 0;
-  -webkit-transition: max-height 0.1s ease;
-  -moz-transition: max-height 0.1s ease;
-  transition: max-height 0.1s ease;
 }
 
 .work-focus.remove {

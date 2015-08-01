@@ -99,10 +99,7 @@ section.portfolio {
             }
 
             .work-container.remove {
-                display: block;
-                @extend .fade-out;
                 max-height: 0;
-                @include transition(max-height .1s ease);
             }
 
             .work-focus.remove {
