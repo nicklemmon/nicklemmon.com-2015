@@ -21,13 +21,11 @@ $( document ).ready(function() {
 		$(['/images/icons/portfolio-white.svg','/images/icons/resume-white.svg']).preload();
 
 		/*===== function to load content in to .work-focus when clicking on each .work-item thumbnail ======*/
-		//$.ajaxSetup({ cache: true });
+		$.ajaxSetup({ cache: true });
 
 		$(".work-item-unit").click(function() {
 			var worknum = $(this).attr("data-worknum"); /* declares variable that stores the data for the 'data-worknum' attribute... */
-	        //var spinner = '<div class="loader">Loading...</div>';
-
-			//$(".work-focus-content").html("<div class='loader'>Loading...</div>");
+			history.pushState({state:worknum}, worknum, worknum); /* ...and changes the path to /worknum for each portfolio item... */
 
 			$(".work-focus-content").delay(0).queue(function() {
 				$(this).load("_includes/portfolio/work-focus-" + worknum + ".html"); /* ...which is then used to dynamically load the appropriate content */
@@ -46,8 +44,8 @@ $( document ).ready(function() {
 		/*===== function to return to the page when finished viewing the detailed view for each portfolio item =====*/
     $(".return").click(function() { /* when the user clicks on .return... */
 
-				//$(".work-focus-content").load("_includes/portfolio/work-focus-empty.html"); /* ...loads empty template for .work-focus to avoid weird image swapping issues... */
         $(".work-focus").removeClass("slide"); /* ...remove the class .slide from .work-focus... */
+				history.pushState({state: ""}, "", ""); /* ...and changes the path to /for each portfolio item... */
         $(".work-focus").addClass("remove"); /* ...add the class .remove to .work-focus... */
         $(".work-container").delay(400).queue(function() {
           $(this).removeClass("remove"); /* ...removes the class .remove... */
@@ -61,11 +59,9 @@ $( document ).ready(function() {
         var dd = $(this).children("dd");
         if (  !(dd.hasClass("show"))  ) { /* if the <dd> element does NOT have a class of .show... */
             dd.addClass("show"); /* ...then add a class of .show... */
-            //$(this).children("dt").addClass("pulse"); /* ...and add a class of .pulse to the <dt> element */
         }
         else { /* if the <dd> element DOES have a class of .show... */
             dd.removeClass("show"); /* ...then remove a class of .show... */
-            //$(this).children("dt").removeClass("pulse"); /* ...and remove a class of .pulse */
         }
     });
 

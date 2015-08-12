@@ -82,6 +82,7 @@ section.portfolio {
             }
 
         .work-focus {
+            @extend .fade-out;
             display: block;
             margin-top: $default-margin;
             background: white;
