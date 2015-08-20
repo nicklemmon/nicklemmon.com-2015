@@ -58,7 +58,7 @@ pkg/
 *.swp
 *~
 _site
-_site/
+_site/*
 _site/js
 .bundle/
 .DS_Store
