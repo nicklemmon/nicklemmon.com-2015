@@ -36,7 +36,7 @@ Three 'silos' with different directions to take:
     * What is mental health treatment?
     * The current system
     * Find treatment
-    
+
 Current county map with MCO territory marked, each county clickable to learn more?? <!-- not sure about this one -->
 
 ---
@@ -59,11 +59,11 @@ Description of the reasons for creating the site, including:
         #####Therapy
 
         #####Medication management
-        
+
     ####Inpatient treatment
-        
+
         #####State hospitals
-        
+
         #####Private hospitals
 
 ---
@@ -71,9 +71,9 @@ Description of the reasons for creating the site, including:
 ###The current system
 
     ####Managed care organizations
-    
+
     ####Healthcare.gov
-    
+
     ####IPRS funding
 
 ---

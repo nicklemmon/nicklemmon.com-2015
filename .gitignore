@@ -49,3 +49,27 @@ Temporary Items
 # Asset files
 *.ai
 *.psd
+
+# Jekyll-specific files
+Gemfile.lock
+test/dest
+*.gem
+pkg/
+*.swp
+*~
+_site
+_site/
+_site/js
+.bundle/
+.DS_Store
+bbin/
+gh-pages/
+site/_site/
+coverage
+.ruby-version
+.ruby-gemset
+.sass-cache
+tmp/*
+.jekyll-metadata
+/vendor
+/test/source/file_name.txt
