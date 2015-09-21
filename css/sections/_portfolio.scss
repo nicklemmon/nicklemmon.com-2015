@@ -85,6 +85,7 @@ section.portfolio {
             @extend .fade-out;
             display: block;
             margin-top: $default-margin;
+            max-width: 600px;
             background: white;
             max-height: 0;
             position: relative;

@@ -392,7 +392,7 @@ section.bio:before, footer.bio:before {
 
 section.bio img, footer.bio img {
   border-radius: 50%;
-  border: 4px solid #11bbdd;
+  border: 5px solid #11bbdd;
   max-width: 200px;
   margin-bottom: 20px;
 }
@@ -420,9 +420,16 @@ section.bio a.social.behance, footer.bio a.social.behance {
   background-size: 35px;
 }
 
+section.bio a.social.codepen, footer.bio a.social.codepen {
+  background: url(/images/icons/codepen.svg) no-repeat 50% 0%;
+  background-size: 35px;
+}
+
 section.bio a.twitter:hover, footer.bio a.twitter:hover,
 section.bio a.behance:hover,
-footer.bio a.behance:hover {
+footer.bio a.behance:hover,
+section.bio a.codepen:hover,
+footer.bio a.codepen:hover {
   border-bottom: 3px solid #11bbdd;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -620,6 +627,7 @@ section.portfolio, footer.portfolio {
 .work-focus {
   display: block;
   margin-top: 40px;
+  max-width: 600px;
   background: white;
   max-height: 0;
   position: relative;

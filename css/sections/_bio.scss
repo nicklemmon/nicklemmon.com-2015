@@ -16,7 +16,7 @@ section.bio {
 
     section.bio img {
         border-radius: 50%;
-        border: 4px solid $light-base-color;
+        border: 5px solid $light-base-color;
         max-width: 200px;
         margin-bottom: 20px;
     }
@@ -41,8 +41,14 @@ section.bio {
         background-size: 35px;
     }
 
+		section.bio a.social.codepen {
+				background: url(/images/icons/codepen.svg) no-repeat 50% 0%;
+				background-size: 35px;
+		}
+
         section.bio a.twitter:hover,
-        section.bio a.behance:hover {
+        section.bio a.behance:hover,
+				section.bio a.codepen:hover {
             border-bottom: 3px solid $light-base-color;
             @include transition(all $default-transition ease);
         }
