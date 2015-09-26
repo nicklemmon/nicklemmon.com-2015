@@ -85,7 +85,7 @@ section.portfolio {
             @extend .fade-out;
             display: block;
             margin-top: $default-margin;
-            max-width: 600px;
+            width: 960px;
             background: white;
             max-height: 0;
             position: relative;
@@ -93,33 +93,38 @@ section.portfolio {
         }
 
             .work-focus.slide {
-                @extend .fade-in;
-                margin-top: 0;
-                max-height: 100%;
-                @include transition(margin-top $default-transition ease);
+              @extend .fade-in;
+              margin-top: 0;
+              max-height: 100%;
+              @include transition(margin-top $default-transition ease);
             }
 
             .work-container.remove {
-                max-height: 0;
-                opacity: 0;
+              max-height: 0;
+              opacity: 0;
             }
 
             .work-focus.remove {
-                display: block;
-                @extend .fade-out;
-                max-height: 0;
-                @include transition(all $default-transition ease);
+              display: block;
+              @extend .fade-out;
+              max-height: 0;
+              @include transition(all $default-transition ease);
             }
 
             .work-focus .return {
-                display: inline-block;
-                text-indent: -9999px;
-                margin-bottom: $default-margin;
-                @include size(60px);
-                background: url(/images/icons/arrow-left.svg) 50% 50% no-repeat;
-                cursor: pointer;
-        				border-bottom: 3px solid rgba(0,0,0,0);
-        				@include transition(all $default-transition ease);
+              display: inline-block;
+              text-indent: -9999px;
+              margin-bottom: $default-margin;
+              @include size(60px);
+              background: url(/images/icons/arrow-left.svg) 50% 50% no-repeat;
+              cursor: pointer;
+      				border-bottom: 3px solid rgba(0,0,0,0);
+      				@include transition(all $default-transition ease);
+            }
+
+            .work-focus .lower.return {
+              margin-top: $default-margin/2;
+              margin-bottom: 0;
             }
 
 				.work-focus .return:hover {
@@ -208,6 +213,10 @@ section.portfolio {
 
         .work-focus.slide {
           margin-top: -$default-margin;
+        }
+
+        .work-focus .lower.return {
+          margin-bottom: $default-margin;
         }
 
 	.overlay p {

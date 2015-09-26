@@ -25,7 +25,7 @@ $( document ).ready(function() {
 
 		$(".work-item-unit").click(function() {
 			var worknum = $(this).attr("data-worknum"); /* declares variable that stores the data for the 'data-worknum' attribute... */
-			history.pushState({state:worknum}, worknum, worknum); /* ...and changes the path to /worknum for each portfolio item... */
+			//history.pushState({state:worknum}, worknum, worknum); /* ...and changes the path to /worknum for each portfolio item... */
 
 			$(".work-focus-content").delay(0).queue(function() {
 				$(this).load("_includes/portfolio/work-focus-" + worknum + ".html"); /* ...which is then used to dynamically load the appropriate content */
