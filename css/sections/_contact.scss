@@ -44,6 +44,15 @@ section.contact {
             margin-bottom: $default-margin/2;
         }
 
+          label.long {
+            text-transform: initial;
+            font-size: 1rem;
+            line-height: 160%;
+            letter-spacing: 1px;
+            max-width: 80%;
+            margin: 5px auto 30px auto;
+          }
+
         textarea {
             height: 20rem;
         }
